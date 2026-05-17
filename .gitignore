@@ -105,3 +105,7 @@ InitTestScene*.unity*
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
 .friflo/
+Assets/Samples/
+Assets/Packages/
+Assets/Packages.meta
+Assets/Samples.meta

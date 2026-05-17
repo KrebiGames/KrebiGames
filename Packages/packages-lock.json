@@ -153,11 +153,10 @@
       }
     },
     "friflo.friflo-ecs-unity": {
-      "version": "https://github.com/friflo/friflo-ecs-unity.git",
+      "version": "file:friflo.friflo-ecs-unity",
       "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "60c019904d0a41107a20ac9e67870f4e1376a913"
+      "source": "embedded",
+      "dependencies": {}
     },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",
