@@ -4,3 +4,6 @@
 [submodule "Packages/ecs-input"]
 	path = Packages/ecs-input
 	url = https://github.com/KrebiGames/ecs-input.git
+[submodule "Packages/ecs-core"]
+	path = Packages/ecs-core
+	url = https://github.com/KrebiGames/ecs-core.git

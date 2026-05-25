@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1180031884314342610}
   - component: {fileID: -9179992444634966777}
-  - component: {fileID: -7045640342881767374}
+  - component: {fileID: 8240894159310666184}
   - component: {fileID: -3513797971151232128}
   m_Layer: 0
   m_Name: Player
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &-7045640342881767374
+--- !u!114 &8240894159310666184
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -153,20 +153,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InputActionEntity
   inputAction: {fileID: -1680190386980627800, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  valueTag:
+    rid: 2936252973750157372
   valueComponent:
-    rid: 2936252796865609958
-  buttonComponent:
-    rid: -2
-  actionType: 0
+    rid: 2936252973750157371
+  buttonTag:
+    rid: 2936252973217743032
   references:
     version: 2
     RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
-    - rid: 2936252796865609958
-      type: {class: Move, ns: ECS.Input, asm: Assembly-CSharp}
+    - rid: 2936252973217743032
+      type: {class: Jump, ns: ECS.Input, asm: Assembly-CSharp}
+      data: 
+    - rid: 2936252973750157371
+      type: {class: Value2, ns: ECS.Core, asm: ECS.Core}
       data:
         Value: {x: 0, y: 0}
+    - rid: 2936252973750157372
+      type: {class: Move, ns: ECS.Input, asm: Assembly-CSharp}
+      data: 
 --- !u!114 &-3513797971151232128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,16 +185,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InputActionEntity
   inputAction: {fileID: -2099379676528639254, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  valueTag:
+    rid: -2
   valueComponent:
     rid: -2
-  buttonComponent:
-    rid: 2936252796865609959
-  actionType: 1
+  buttonTag:
+    rid: 2936252973217743032
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 2936252796865609959
+    - rid: 2936252973217743032
       type: {class: Jump, ns: ECS.Input, asm: Assembly-CSharp}
       data: 

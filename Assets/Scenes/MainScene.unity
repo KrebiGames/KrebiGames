@@ -520,6 +520,7 @@ GameObject:
   - component: {fileID: 2011353406}
   - component: {fileID: 2011353409}
   - component: {fileID: 2011353410}
+  - component: {fileID: 2011353411}
   m_Layer: 0
   m_Name: Input Store
   m_TagString: Untagged
@@ -572,11 +573,11 @@ MonoBehaviour:
   - type: Friflo.Engine.ECS.Systems.SystemGroup
     value: '{"id":1,"enabled":true,"name":"Update"}'
     systems:
+    - type: ECS.Input.InputValue2System
+      value: '{"id":3,"enabled":true}'
+      systems: []
     - type: ECS.Input.ButtonSystem
       value: '{"id":2,"enabled":true}'
-      systems: []
-    - type: ECS.Input.MoveSystem
-      value: '{"id":3,"enabled":true}'
       systems: []
 --- !u!114 &2011353410
 MonoBehaviour:
@@ -590,6 +591,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3191303d5737a4643aab8c99b702894a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: ECS.Input::ECS.Input.Input
+--- !u!114 &2011353411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011353405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81f3004bad2a8c54d90bd705f182f7aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StoreDebug
+  debug: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
