@@ -7,3 +7,12 @@
 [submodule "Packages/ecs-core"]
 	path = Packages/ecs-core
 	url = https://github.com/KrebiGames/ecs-core.git
+[submodule "Assets/Photon/PhotonLibs"]
+	path = Assets/Photon/PhotonLibs
+	url = https://github.com/KrebiGames/photon-libs.git
+[submodule "Assets/Photon/PhotonRealtime"]
+	path = Assets/Photon/PhotonRealtime
+	url = https://github.com/KrebiGames/photon-realtime.git
+[submodule "Assets/Photon/Quantum"]
+	path = Assets/Photon/Quantum
+	url = https://github.com/KrebiGames/photon-quantum.git
