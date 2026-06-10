@@ -19,3 +19,6 @@
 [submodule "Assets/QuantumUser"]
 	path = Assets/QuantumUser
 	url = https://github.com/KrebiGames/quantum-krebi.git
+[submodule "Assets/Photon/QuantumDemoInput"]
+	path = Assets/Photon/QuantumDemoInput
+	url = https://github.com/KrebiGames/photon-quantum-input.git
