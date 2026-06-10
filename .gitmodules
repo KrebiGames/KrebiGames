@@ -25,3 +25,6 @@
 [submodule "Assets/Photon/QuantumMenu"]
 	path = Assets/Photon/QuantumMenu
 	url = https://github.com/KrebiGames/photon-quantum-menu.git
+[submodule "Assets/TextMesh Pro"]
+	path = Assets/TextMesh Pro
+	url = https://github.com/KrebiGames/tmp-assets.git
