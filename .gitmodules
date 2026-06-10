@@ -22,3 +22,6 @@
 [submodule "Assets/Photon/QuantumDemoInput"]
 	path = Assets/Photon/QuantumDemoInput
 	url = https://github.com/KrebiGames/photon-quantum-input.git
+[submodule "Assets/Photon/QuantumMenu"]
+	path = Assets/Photon/QuantumMenu
+	url = https://github.com/KrebiGames/photon-quantum-menu.git
