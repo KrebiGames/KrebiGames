@@ -7,14 +7,14 @@
 [submodule "Packages/ecs-core"]
 	path = Packages/ecs-core
 	url = https://github.com/KrebiGames/ecs-core.git
-[submodule "Assets/Photon/PhotonLibs"]
-	path = Assets/Photon/PhotonLibs
+[submodule "Packages/com.photonengine.photonlibs"]
+	path = Packages/com.photonengine.photonlibs
 	url = https://github.com/KrebiGames/photon-libs.git
-[submodule "Assets/Photon/PhotonRealtime"]
-	path = Assets/Photon/PhotonRealtime
+[submodule "Packages/com.photonengine.realtime"]
+	path = Packages/com.photonengine.realtime
 	url = https://github.com/KrebiGames/photon-realtime.git
-[submodule "Assets/Photon/Quantum"]
-	path = Assets/Photon/Quantum
+[submodule "Packages/com.photonengine.quantum"]
+	path = Packages/com.photonengine.quantum
 	url = https://github.com/KrebiGames/photon-quantum.git
 [submodule "Assets/QuantumUser"]
 	path = Assets/QuantumUser
@@ -25,6 +25,9 @@
 [submodule "Assets/Photon/QuantumMenu"]
 	path = Assets/Photon/QuantumMenu
 	url = https://github.com/KrebiGames/photon-quantum-menu.git
+[submodule "Assets/Photon/QuantumAddons/KCC"]
+	path = Assets/Photon/QuantumAddons/KCC
+	url = https://github.com/KrebiGames/photon-quantum-kcc.git
 [submodule "Assets/TextMesh Pro"]
 	path = Assets/TextMesh Pro
 	url = https://github.com/KrebiGames/tmp-assets.git
