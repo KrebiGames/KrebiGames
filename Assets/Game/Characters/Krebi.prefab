@@ -246,7 +246,7 @@ Transform:
   m_GameObject: {fileID: 1088427281657130754}
   serializedVersion: 2
   m_LocalRotation: {x: 0.62755096, y: 0.74788624, z: -0.13912462, w: -0.16580229}
-  m_LocalPosition: {x: 0.06, y: -0.02, z: -0.04}
+  m_LocalPosition: {x: 0.06, y: -0.02, z: -0.040000003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -307,8 +307,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4056961561816765349}
   - component: {fileID: 6155013294406837683}
+  - component: {fileID: 5911078949332457144}
   m_Layer: 0
-  m_Name: 'Krebi '
+  m_Name: Krebi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -944,9 +945,9 @@ MonoBehaviour:
   _Editor_EnsureCount: 0
   _Editor_OnValidateTrigger: 0
   _EditorAllowAutoUpdateFeetParams: 1
-  _EditorCategory: 1
+  _EditorCategory: 0
   _EditorSetupCategory: 2
-  _EditorMotionCategory: 2
+  _EditorMotionCategory: 3
   _EditorExtraCategory: 0
   setupPose:
     MainHipsPose:
@@ -957,7 +958,7 @@ MonoBehaviour:
     LegPoses: []
   ExtraSetupPoses: []
   IKHintMode: 0
-  LimitLegStretch: 0.7
+  LimitLegStretch: 1
   FeetYOffset: 0
   FeetLengthAdjust: 0
   baseTransform: {fileID: 0}
@@ -984,7 +985,7 @@ MonoBehaviour:
   RaycastShape: 0
   SpherecastRealign: 0
   SpherecastResize: 1
-  NoRaycastGroundBehaviour: 0
+  NoRaycastGroundBehaviour: 2
   ZeroStepsOnNoRaycast: 0
   NoRaycast_KeepAttachedUntilStretch: 1.1
   BodyStepDown: 0.5
@@ -994,6 +995,137 @@ MonoBehaviour:
   LegsAnimatorBlend: 1
   _Editor_DefaultModuleOnStart: {fileID: 11400000, guid: 7d9bd86d54a7a594cb1793f9533e2e00, type: 2}
   _Editor_LegHelperModule: {fileID: 11400000, guid: 0645fbea8059aec47aa6ae9d2c93c1d4, type: 2}
+--- !u!114 &5911078949332457144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140819088586147827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 163d2c8446aa6ae42a718abaa805b8f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AD_FimpAnimating::FIMSpace.LeaningAnimator
+  _EditorDrawSetup: 0
+  Leaning:
+    GroundAlignBlend: 1
+    GroundAlignRapidity: 1
+    AlignOnlyWhenMoving: 0
+    ClampGroundAlign: 25
+    MutiplyGroundAxisRotation: {x: 1, y: 1}
+    AlignAmountOnSpeed:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0.1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.3
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    GroundMask:
+      serializedVersion: 2
+      m_Bits: 1
+    GroundCastLength: 0.2
+    BoxCastSize: 0
+    _UserUseCustomRaycast: 0
+    ResetOnUngrounded: 1
+    UpsideDownSupport: 0
+    BaseTransform: {fileID: 4056961561816765349}
+    SpineStart: {fileID: 4416894290285122627}
+    SpineMiddle: {fileID: 7567130247591860503}
+    Chest: {fileID: 2735302312917153922}
+    Neck: {fileID: 0}
+    LeftUpperArm: {fileID: 0}
+    LeftForearm: {fileID: 0}
+    RightUpperArm: {fileID: 0}
+    RightForearm: {fileID: 0}
+    SpineGroundAlign: 0
+    SpineGrAdjustDuration: 0.15
+    SlopeSpineLean:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 10
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 75
+        value: 1.25
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    AdjustForwAndSide: {x: 1, y: 0.75}
+    UpdateMode: 0
+    Calibrate: 1
+    SideSwayPower: 1
+    ClampSideSway: 25
+    ForwardSwayPower: 0.5
+    BrakeRapidity: 0.485
+    RootBlend: 1
+    FootsOrigin: {fileID: 4056961561816765349}
+    RootRapidity: 0.425
+    RootSideSway: 1
+    RootForwardSway: 0.5
+    RootStrafeSway: 0.75
+    RootBrakeSway: 0.5
+    RootBackwardSway: 0.5
+    SpineBlend: 0.5
+    ClampSpineSway: 25
+    SpineRapidity: 0.5
+    SpineForwardSway: {x: 5, y: 0, z: 0}
+    SpineSideLean: -0.125
+    SpineRightSway: {x: 0, y: -0.75, z: 1.25}
+    SpineBrakeSway: 0.85
+    StartRunPush: 1
+    NeckCompensation: 0.75
+    ConstantAddRotation: {x: 0, y: 0, z: 0}
+    ArmsBlend: 0.5
+    ArmsSideSway: 0.5
+    ArmsForwardSway: -0.225
+    ObjSpeedWhenBraking: 0.2
+    ObjSpeedWhenRunning: 3
+    AccelerationDetection: 0
+    TryAutoDetectGround: 1
+    UseMuscles: 0
+    MuscleSettings:
+      DesiredPosition: {x: 0, y: 0, z: 0}
+      Acceleration: 10000
+      AccelerationLimit: 5000
+      Damping: 10
+      BrakePower: 0.2
+    AllEffectsBlend: 1
+    IsMovingAnimatorParam: 
+    IsGroundedAnimatorParam: 
+    FadeOffLeaningParam: 
+    FadeOffSpeed: 0.5
+    AccelValueThreshold: 0.25
 --- !u!1 &1185862801782938637
 GameObject:
   m_ObjectHideFlags: 0
@@ -1431,7 +1563,7 @@ Transform:
   m_GameObject: {fileID: 2722285399291915935}
   serializedVersion: 2
   m_LocalRotation: {x: 0.62755096, y: 0.7478862, z: 0.13912475, w: 0.16580243}
-  m_LocalPosition: {x: 0.06, y: -0.02, z: 0.04}
+  m_LocalPosition: {x: 0.06, y: -0.02, z: 0.040000003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1695,7 +1827,7 @@ Transform:
   m_GameObject: {fileID: 3632629273371901792}
   serializedVersion: 2
   m_LocalRotation: {x: -0.13912463, y: -0.1658023, z: 0.62755096, w: 0.74788624}
-  m_LocalPosition: {x: -0.06, y: -0.02, z: -0.04}
+  m_LocalPosition: {x: -0.06, y: -0.02, z: -0.040000003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1952,7 +2084,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4688560212410987409}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.6427876, y: 0.7660445, z: 0, w: 0}
+  m_LocalRotation: {x: 0.6427876, y: 0.7660445, z: -0, w: 0}
   m_LocalPosition: {x: 0.07, y: -0.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2533,7 +2665,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7406416280656366437}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.6427876, w: 0.7660445}
+  m_LocalRotation: {x: -0, y: -0, z: 0.6427876, w: 0.7660445}
   m_LocalPosition: {x: -0.07, y: -0.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2689,7 +2821,7 @@ Transform:
   m_GameObject: {fileID: 8451918539627062292}
   serializedVersion: 2
   m_LocalRotation: {x: 0.13912469, y: 0.16580237, z: 0.62755096, w: 0.74788624}
-  m_LocalPosition: {x: -0.06, y: -0.02, z: 0.04}
+  m_LocalPosition: {x: -0.06, y: -0.02, z: 0.040000003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
