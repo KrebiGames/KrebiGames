@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &23478930268164552
+--- !u!1 &723906645374775260
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,108 +8,75 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7132444586524913027}
+  - component: {fileID: 7329585252019655902}
+  - component: {fileID: 2731343476970979396}
+  - component: {fileID: 1357003820462639464}
   m_Layer: 0
-  m_Name: R2 Foot
+  m_Name: R Eye Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7132444586524913027
+--- !u!4 &7329585252019655902
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 23478930268164552}
+  m_GameObject: {fileID: 723906645374775260}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.2588191, w: 0.9659258}
-  m_LocalPosition: {x: 0, y: 0.06, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 643076827364170716}
-  m_Father: {fileID: 7889456645011551473}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 30}
---- !u!1 &341517716255810367
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8813897718110542586}
-  - component: {fileID: 2363759356337125985}
-  - component: {fileID: 1211991980973005219}
-  m_Layer: 0
-  m_Name: R1 Knee Brush
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8813897718110542586
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 341517716255810367}
-  serializedVersion: 2
-  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0.06, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
+  m_LocalPosition: {x: -0.06, y: -0.814, z: 0.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6841707548347929485}
-  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
---- !u!114 &2363759356337125985
+  m_Father: {fileID: 933441237764105957}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2731343476970979396
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 341517716255810367}
+  m_GameObject: {fileID: 723906645374775260}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2390520846a478242a1b2271b4ddd597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: MudBun::MudBun.MudMaterial
   m_sharedMaterial: {fileID: 0}
-  m_color: {r: 0.8980392, g: 0.3372549, b: 0.23529412, a: 1}
+  m_color: {r: 0, g: 0, b: 0, a: 1}
   m_emission: {r: 0, g: 0, b: 0, a: 1}
-  m_metallic: 0
-  m_smoothness: 0.5
+  m_metallic: 1
+  m_smoothness: 1
   m_textureIndex: 0
   m_splatSize: 1
   m_blendTightness: 0
   m_contributeMaterial: 1
---- !u!114 &1211991980973005219
+--- !u!114 &1357003820462639464
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 341517716255810367}
+  m_GameObject: {fileID: 723906645374775260}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73c6499a22a3e0a4098d1b3f96db799a, type: 3}
+  m_Script: {fileID: 11500000, guid: adb0eba57e6c8fa4ebbc301fe9323f47, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: MudBun::MudBun.MudSolidAngle
+  m_EditorClassIdentifier: MudBun::MudBun.MudSphere
   Hidden: 0
   m_operator: 0
-  m_booleanOperatorType: 0
+  m_booleanOperatorType: 14
   m_dyeBlendMode: 3
   m_blend: 0
   m_symmetry: 0
   m_countAsBone: 0
   m_canCountAsBone: 1
-  m_radius: 0.07
-  m_angle: 8
-  m_round: 0
---- !u!1 &371660614668822620
+  m_radius: 0.015
+  PivotShift: 0
+--- !u!1 &799104460603947648
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -117,38 +84,114 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 774583545835972687}
-  - component: {fileID: 5494089013729798474}
-  - component: {fileID: 3389863941784607477}
+  - component: {fileID: 1636784996585888116}
+  - component: {fileID: 8894881954754065302}
+  - component: {fileID: 7928061155165908560}
   m_Layer: 0
-  m_Name: R3 Foot Brush
+  m_Name: L Eye Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &774583545835972687
+--- !u!4 &1636784996585888116
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 371660614668822620}
+  m_GameObject: {fileID: 799104460603947648}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
+  m_LocalPosition: {x: 0.06, y: -0.814, z: 0.06}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3412347780939358062}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8894881954754065302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799104460603947648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2390520846a478242a1b2271b4ddd597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MudBun::MudBun.MudMaterial
+  m_sharedMaterial: {fileID: 0}
+  m_color: {r: 0, g: 0, b: 0, a: 1}
+  m_emission: {r: 0, g: 0, b: 0, a: 1}
+  m_metallic: 1
+  m_smoothness: 1
+  m_textureIndex: 0
+  m_splatSize: 1
+  m_blendTightness: 0
+  m_contributeMaterial: 1
+--- !u!114 &7928061155165908560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799104460603947648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adb0eba57e6c8fa4ebbc301fe9323f47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MudBun::MudBun.MudSphere
+  Hidden: 0
+  m_operator: 0
+  m_booleanOperatorType: 14
+  m_dyeBlendMode: 3
+  m_blend: 0
+  m_symmetry: 0
+  m_countAsBone: 0
+  m_canCountAsBone: 1
+  m_radius: 0.015
+  PivotShift: 0
+--- !u!1 &954247504880292429
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4975705046659721982}
+  - component: {fileID: 6439957327187726669}
+  - component: {fileID: 4078999685380381677}
+  m_Layer: 0
+  m_Name: R1 Foot Brush
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4975705046659721982
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954247504880292429}
   serializedVersion: 2
   m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2599027810426106714}
+  m_Father: {fileID: 7731939615152876468}
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
---- !u!114 &5494089013729798474
+--- !u!114 &6439957327187726669
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 371660614668822620}
+  m_GameObject: {fileID: 954247504880292429}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2390520846a478242a1b2271b4ddd597, type: 3}
@@ -163,13 +206,13 @@ MonoBehaviour:
   m_splatSize: 1
   m_blendTightness: 0
   m_contributeMaterial: 1
---- !u!114 &3389863941784607477
+--- !u!114 &4078999685380381677
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 371660614668822620}
+  m_GameObject: {fileID: 954247504880292429}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 73c6499a22a3e0a4098d1b3f96db799a, type: 3}
@@ -183,119 +226,8 @@ MonoBehaviour:
   m_symmetry: 0
   m_countAsBone: 0
   m_canCountAsBone: 1
-  m_radius: 0.07
+  m_radius: 0.04
   m_angle: 3
-  m_round: 0
---- !u!1 &468419839125905335
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 733231236575672145}
-  m_Layer: 0
-  m_Name: R3 Knee
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &733231236575672145
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 468419839125905335}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.2588191, w: 0.9659258}
-  m_LocalPosition: {x: 0, y: 0.08, z: -0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5634271893794699335}
-  - {fileID: 2599027810426106714}
-  m_Father: {fileID: 6318431582268612138}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 30}
---- !u!1 &1088427281657130754
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6318431582268612138}
-  - component: {fileID: 8615149947095823543}
-  - component: {fileID: 8105287615576018831}
-  m_Layer: 0
-  m_Name: R3 Leg
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6318431582268612138
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1088427281657130754}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.62755096, y: 0.74788624, z: -0.13912462, w: -0.16580229}
-  m_LocalPosition: {x: 0.06, y: -0.02, z: -0.040000003}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 733231236575672145}
-  m_Father: {fileID: 7567130247591860503}
-  m_LocalEulerAnglesHint: {x: 0, y: 205, z: 80}
---- !u!114 &8615149947095823543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1088427281657130754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2390520846a478242a1b2271b4ddd597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: MudBun::MudBun.MudMaterial
-  m_sharedMaterial: {fileID: 0}
-  m_color: {r: 0.8980392, g: 0.3372549, b: 0.23529412, a: 1}
-  m_emission: {r: 0, g: 0, b: 0, a: 1}
-  m_metallic: 0
-  m_smoothness: 0.5
-  m_textureIndex: 0
-  m_splatSize: 1
-  m_blendTightness: 0
-  m_contributeMaterial: 1
---- !u!114 &8105287615576018831
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1088427281657130754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73c6499a22a3e0a4098d1b3f96db799a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: MudBun::MudBun.MudSolidAngle
-  Hidden: 0
-  m_operator: 0
-  m_booleanOperatorType: 0
-  m_dyeBlendMode: 3
-  m_blend: 0.04
-  m_symmetry: 0
-  m_countAsBone: 1
-  m_canCountAsBone: 1
-  m_radius: 0.08
-  m_angle: 10
   m_round: 0
 --- !u!1 &1140819088586147827
 GameObject:
@@ -306,8 +238,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4056961561816765349}
-  - component: {fileID: 6155013294406837683}
   - component: {fileID: 5911078949332457144}
+  - component: {fileID: 1744640763137718166}
   m_Layer: 0
   m_Name: Krebi
   m_TagString: Untagged
@@ -326,675 +258,11 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4416894290285122627}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6155013294406837683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1140819088586147827}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f3505aa6d98bd4418e0744d5ab56fdd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FIMSpace.FProceduralAnimation.LegsAnimator
-  Mecanim: {fileID: 0}
-  GroundedParameter: 
-  MovingParameter: 
-  User_IsMovingMecanim_NotMovingFloat_Threshold: 0.1
-  Rigidbody: {fileID: 0}
-  UseRigidbodyVelocityForIsMoving: 0
-  UseRaycastsForIsGrounded: 0
-  SlidingParameter: 
-  SpineBone: {fileID: 0}
-  ChestBone: {fileID: 0}
-  RagdolledParameter: 
-  SwingHelper: 0
-  GluingFloorLevel: 0.05
-  GluingFloorLevelUseOnMoving: 0
-  GluingFloorLevelOnMoving: 0
-  StepPointsOverlapRadius: 0
-  UseStepPointsOverlapRadiusOnMoving: 0
-  StepPointsOverlapRadiusOnMoving: 0
-  MotionInfluence:
-    AdvancedInfluence: 0
-    AxisMotionInfluence: {x: 0, y: 1, z: 1}
-    AxisMotionInfluenceBackwards: {x: 1, y: 1, z: 1}
-  Event_OnStep:
-    m_PersistentCalls:
-      m_Calls: []
-  EventExecuteSooner: 0.05
-  SendOnMovingGlue: 0
-  SendOnStopping: 0
-  StepEventOnLanding: 0
-  StepInfoReceiver: {fileID: 0}
-  ExtraPelvisOffset: {x: 0, y: 0, z: 0}
-  ReposeGluingAfter: 0
-  GlueOnlyOnIdle: 0
-  LocalWorldUp: 1
-  DisableCustomModules: 0
-  CustomModules:
-  - Enabled: 1
-    Parent: {fileID: 6155013294406837683}
-    ModuleReference: {fileID: 11400000, guid: 7d9bd86d54a7a594cb1793f9533e2e00, type: 2}
-    customStringList: []
-    customObjectList: []
-    variables:
-    - VariableName: Rotation Power
-      Tooltip: 
-      _value: {x: -0.25, y: 0, z: 0, w: 0}
-      _string: 
-      _curve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      _uObject: {fileID: 0}
-      VariableType: 0
-      _rangeHelper: {x: 0, y: 0, z: 0, w: 0}
-  - Enabled: 1
-    Parent: {fileID: 6155013294406837683}
-    ModuleReference: {fileID: 11400000, guid: 0645fbea8059aec47aa6ae9d2c93c1d4, type: 2}
-    customStringList: []
-    customObjectList: []
-    variables: []
-  ImpulsesPowerMultiplier: 1
-  ImpulsesDurationMultiplier: 1
-  ImpulsesDampUpPushes: 0
-  DebugPushHipsImpulse:
-    OptionalName: Impulse
-    PowerMultiplier: 1
-    ImpulseDuration: 0.6
-    WorldTranslation: {x: 0, y: 0, z: 0}
-    LocalTranslation: {x: 0, y: -1, z: 0}
-    HipsRotate: {x: 0, y: 0, z: 0}
-    InheritElasticness: 0.75
-    ImpulseCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 0.2
-        value: 1
-        inSlope: 3.4375
-        outSlope: 3.4375
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    YAxisMultiplyCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    AlignWithDesiredMoveDirection: 0
-  ExtraHipsHubs: []
-  HipsHubsHandling: 1
-  HipsHubsBlend: 1
-  HubsBackBonesBlend:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  HubBackBonesElasticity: 0.1
-  HipsSetup:
-    HipsElasticityBlend: 1
-    HipsMuscle:
-      DesiredPosition: {x: 0, y: 0, z: 0}
-      Acceleration: 10000
-      AccelerationLimit: 5000
-      Damping: 10
-      BrakePower: 0.2
-    HipsRotElasticityBlend: 0
-    HipsRotMuscle:
-      DesiredRotation: {x: 0, y: 0, z: 0, w: 0}
-      Acceleration: 5000
-      AccelerationLimit: 1000
-      Damping: 10
-      BrakePower: 0.2
-  StabilityAlgorithm: 1
-  UseHips: 1
-  HipsHeightStepBlend: 1
-  HipsHeightStepSpeed: 0.7
-  HipsAdjustStyle: 0
-  StabilizeCenterOfMass: 0.8
-  AnimationIsStablePose: 0.75
-  StabilizingSpeed: 0.375
-  PushHipsOnLegMove: 0.11
-  NormalizePush: 1
-  PushReactionSpeed: 0.3
-  PushYBlend: 1
-  HipsStretchPreventer: 0.15
-  StretchPreventerSpeed: 0.8
-  StabilizeOnIsMoving: 0.5
-  _Hips_Modules_ExtraWOffset: {x: 0, y: 0, z: 0}
-  _Hips_Modules_ExtraRotOffset: {x: 0, y: 0, z: 0}
-  _Hips_Modules_ExtraWOffsetElastic: {x: 0, y: 0, z: 0}
-  _Hips_Modules_ExtraWOffsetSmoothDamp: {x: 0, y: 0, z: 0}
-  _HipsOffsetSmoothDampDuration: 0.08
-  Legs:
-  - G_CustomForceAttach: 0
-    G_CustomForceNOTDetach: 0
-    G_CustomForceDetach: 0
-    G_CustomForceNOTAttach: 0
-    _FinalIKPos: {x: 0, y: 0, z: 0}
-    Owner: {fileID: 6155013294406837683}
-    LegBlendWeight: 1
-    LegMoveSpeedMultiplier: 0.915503
-    LegRaiseMultiplier: 0.9871056
-    GlueThresholdMultiplier: 0.996834
-    GluePointOffset: {x: 0, y: 0}
-    LegStretchMultiplier: 1
-    CustomLegAnimating: {fileID: 0}
-    FootPitchOffset: 0
-    BoneStart: {fileID: 3298291524308145311}
-    BoneMid: {fileID: 6192019486111124541}
-    BoneEnd: {fileID: 4193884815610726959}
-    Side: 1
-    OppositeLegIndex: 3
-    RaycastPrecision: 0
-    UseFeet: 0
-    BoneFeet: {fileID: 0}
-    FeetSensitivity: 0.5
-    InverseHint: 0
-    AnkleToHeel: {x: -0.027878072, y: 0.033223882, z: -0.000000009778887}
-    AnkleToFeetEnd: {x: -0.022779096, y: 0.037502415, z: 0.014274344}
-    AnkleRight: {x: -0.6942723, y: -0.58256334, z: 0.4226183}
-    AnkleUp: {x: 0.64278746, y: -0.76604474, z: -0.000000014901161}
-    AnkleForward: {x: 0.32374442, y: 0.27165377, z: 0.9063078}
-    FootMiddlePosition: 0.5
-    AnkleYawCorrection: 0
-  - G_CustomForceAttach: 0
-    G_CustomForceNOTDetach: 0
-    G_CustomForceDetach: 0
-    G_CustomForceNOTAttach: 0
-    _FinalIKPos: {x: 0, y: 0, z: 0}
-    Owner: {fileID: 6155013294406837683}
-    LegBlendWeight: 1
-    LegMoveSpeedMultiplier: 0.88052475
-    LegRaiseMultiplier: 0.81138504
-    GlueThresholdMultiplier: 0.8815317
-    GluePointOffset: {x: 0, y: 0}
-    LegStretchMultiplier: 1
-    CustomLegAnimating: {fileID: 0}
-    FootPitchOffset: 0
-    BoneStart: {fileID: 2114162834289404310}
-    BoneMid: {fileID: 851555433967332506}
-    BoneEnd: {fileID: 7173330756275624883}
-    Side: 1
-    OppositeLegIndex: 4
-    RaycastPrecision: 0
-    UseFeet: 0
-    BoneFeet: {fileID: 0}
-    FeetSensitivity: 0.5
-    InverseHint: 0
-    AnkleToHeel: {x: -0.027878083, y: 0.033223882, z: 0}
-    AnkleToFeetEnd: {x: -0.027878083, y: 0.033223882, z: 0.015750002}
-    AnkleRight: {x: -0.7660446, y: -0.64278746, z: 0}
-    AnkleUp: {x: 0.64278746, y: -0.7660446, z: 0}
-    AnkleForward: {x: 0, y: 0, z: 1}
-    FootMiddlePosition: 0.5
-    AnkleYawCorrection: 0
-  - G_CustomForceAttach: 0
-    G_CustomForceNOTDetach: 0
-    G_CustomForceDetach: 0
-    G_CustomForceNOTAttach: 0
-    _FinalIKPos: {x: 0, y: 0, z: 0}
-    Owner: {fileID: 6155013294406837683}
-    LegBlendWeight: 1
-    LegMoveSpeedMultiplier: 0.9246278
-    LegRaiseMultiplier: 0.9083254
-    GlueThresholdMultiplier: 0.8884255
-    GluePointOffset: {x: 0, y: 0}
-    LegStretchMultiplier: 1
-    CustomLegAnimating: {fileID: 0}
-    FootPitchOffset: 0
-    BoneStart: {fileID: 890614471030752259}
-    BoneMid: {fileID: 8184638533179646297}
-    BoneEnd: {fileID: 3877799963092192068}
-    Side: 1
-    OppositeLegIndex: 5
-    RaycastPrecision: 0
-    UseFeet: 0
-    BoneFeet: {fileID: 0}
-    FeetSensitivity: 0.5
-    InverseHint: 0
-    AnkleToHeel: {x: -0.027878102, y: 0.033223864, z: -0.0000000069849193}
-    AnkleToFeetEnd: {x: -0.032977067, y: 0.028945325, z: 0.014274348}
-    AnkleRight: {x: -0.6942723, y: -0.5825634, z: -0.4226181}
-    AnkleUp: {x: 0.6427875, y: -0.7660446, z: 0.000000014901161}
-    AnkleForward: {x: -0.3237443, y: -0.27165365, z: 0.9063079}
-    FootMiddlePosition: 0.5
-    AnkleYawCorrection: 0
-  - G_CustomForceAttach: 0
-    G_CustomForceNOTDetach: 0
-    G_CustomForceDetach: 0
-    G_CustomForceNOTAttach: 0
-    _FinalIKPos: {x: 0, y: 0, z: 0}
-    Owner: {fileID: 6155013294406837683}
-    LegBlendWeight: 1
-    LegMoveSpeedMultiplier: 0.84311813
-    LegRaiseMultiplier: 0.8315037
-    GlueThresholdMultiplier: 0.943114
-    GluePointOffset: {x: 0, y: 0}
-    LegStretchMultiplier: 1
-    CustomLegAnimating: {fileID: 0}
-    FootPitchOffset: 0
-    BoneStart: {fileID: 4307476501030616441}
-    BoneMid: {fileID: 6841707548347929485}
-    BoneEnd: {fileID: 8043439589287124070}
-    Side: 2
-    OppositeLegIndex: 0
-    RaycastPrecision: 0
-    UseFeet: 0
-    BoneFeet: {fileID: 0}
-    FeetSensitivity: 0.5
-    InverseHint: 0
-    AnkleToHeel: {x: -0.027878102, y: 0.03322388, z: 0}
-    AnkleToFeetEnd: {x: -0.022779118, y: 0.037502438, z: -0.014274359}
-    AnkleRight: {x: 0.69427204, y: 0.5825634, z: 0.42261845}
-    AnkleUp: {x: 0.64278746, y: -0.76604474, z: 0.000000014901161}
-    AnkleForward: {x: 0.32374454, y: 0.27165383, z: -0.90630794}
-    FootMiddlePosition: 0.5
-    AnkleYawCorrection: 0
-  - G_CustomForceAttach: 0
-    G_CustomForceNOTDetach: 0
-    G_CustomForceDetach: 0
-    G_CustomForceNOTAttach: 0
-    _FinalIKPos: {x: 0, y: 0, z: 0}
-    Owner: {fileID: 6155013294406837683}
-    LegBlendWeight: 1
-    LegMoveSpeedMultiplier: 0.94329154
-    LegRaiseMultiplier: 0.9862167
-    GlueThresholdMultiplier: 0.89238864
-    GluePointOffset: {x: 0, y: 0}
-    LegStretchMultiplier: 1
-    CustomLegAnimating: {fileID: 0}
-    FootPitchOffset: 0
-    BoneStart: {fileID: 8359305345599062551}
-    BoneMid: {fileID: 7889456645011551473}
-    BoneEnd: {fileID: 7132444586524913027}
-    Side: 2
-    OppositeLegIndex: 1
-    RaycastPrecision: 0
-    UseFeet: 0
-    BoneFeet: {fileID: 0}
-    FeetSensitivity: 0.5
-    InverseHint: 0
-    AnkleToHeel: {x: -0.027878087, y: 0.03322389, z: 0}
-    AnkleToFeetEnd: {x: -0.027878087, y: 0.03322389, z: -0.015750002}
-    AnkleRight: {x: 0.7660446, y: 0.6427876, z: 0}
-    AnkleUp: {x: 0.64278746, y: -0.7660446, z: 0}
-    AnkleForward: {x: 0, y: 0, z: -1}
-    FootMiddlePosition: 0.5
-    AnkleYawCorrection: 0
-  - G_CustomForceAttach: 0
-    G_CustomForceNOTDetach: 0
-    G_CustomForceDetach: 0
-    G_CustomForceNOTAttach: 0
-    _FinalIKPos: {x: 0, y: 0, z: 0}
-    Owner: {fileID: 6155013294406837683}
-    LegBlendWeight: 1
-    LegMoveSpeedMultiplier: 0.8519169
-    LegRaiseMultiplier: 0.81784135
-    GlueThresholdMultiplier: 0.99846005
-    GluePointOffset: {x: 0, y: 0}
-    LegStretchMultiplier: 1
-    CustomLegAnimating: {fileID: 0}
-    FootPitchOffset: 0
-    BoneStart: {fileID: 6318431582268612138}
-    BoneMid: {fileID: 733231236575672145}
-    BoneEnd: {fileID: 2599027810426106714}
-    Side: 2
-    OppositeLegIndex: 2
-    RaycastPrecision: 0
-    UseFeet: 0
-    BoneFeet: {fileID: 0}
-    FeetSensitivity: 0.5
-    InverseHint: 0
-    AnkleToHeel: {x: -0.027878102, y: 0.03322388, z: 0}
-    AnkleToFeetEnd: {x: -0.032977093, y: 0.028945323, z: -0.014274351}
-    AnkleRight: {x: 0.6942723, y: 0.5825635, z: -0.4226181}
-    AnkleUp: {x: 0.6427875, y: -0.7660446, z: 0}
-    AnkleForward: {x: -0.32374424, y: -0.27165365, z: -0.90630794}
-    FootMiddlePosition: 0.5
-    AnkleYawCorrection: 0
-  BaseLegAnimating:
-    StepMoveDuration: 0.25
-    MoveToGoalCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 3
-        inWeight: 0
-        outWeight: 0.1842105
-      - serializedVersion: 3
-        time: 0.4885197
-        value: 0.8972011
-        inSlope: 1.38764
-        outSlope: 1.38764
-        tangentMode: 0
-        weightedMode: 3
-        inWeight: 0.3333333
-        outWeight: 0.3333333
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 3
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    SpherizeTrack:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: -0.625
-        outSlope: -0.625
-        tangentMode: 0
-        weightedMode: 3
-        inWeight: 0
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.4
-        value: -0.25
-        inSlope: -0.625
-        outSlope: -0.625
-        tangentMode: 0
-        weightedMode: 3
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.85
-        value: 0
-        inSlope: 0.5555555
-        outSlope: 0.5555555
-        tangentMode: 0
-        weightedMode: 3
-        inWeight: 0.33333334
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    SpherizePower: 0.1
-    MinFootRaise: 0.2
-    MaxFootRaise: 0.65
-    RaiseYAxisCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0.8504464
-        outSlope: 0.8504464
-        tangentMode: 0
-        weightedMode: 3
-        inWeight: 0
-        outWeight: 0.6517575
-      - serializedVersion: 3
-        time: 0.2731183
-        value: 0.45
-        inSlope: 0.9770691
-        outSlope: 0.9770691
-        tangentMode: 0
-        weightedMode: 3
-        inWeight: 0.3333333
-        outWeight: 0.3387407
-      - serializedVersion: 3
-        time: 0.5943514
-        value: 0.7946472
-        inSlope: -0.2710344
-        outSlope: -0.2710344
-        tangentMode: 0
-        weightedMode: 3
-        inWeight: 0.3333333
-        outWeight: 0.3333333
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: -0.1500788
-        outSlope: -0.1500788
-        tangentMode: 0
-        weightedMode: 3
-        inWeight: 0.5409704
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    AllowSpeedups: 0.4
-    AllowDetachBefore: 0.95
-    PushHipsOnMoveCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 5.630541
-        outSlope: 5.630541
-        tangentMode: 0
-        weightedMode: 3
-        inWeight: 0
-        outWeight: 0.198735
-      - serializedVersion: 3
-        time: 0.320017
-        value: 0.654645
-        inSlope: -0.1664574
-        outSlope: -0.1664574
-        tangentMode: 0
-        weightedMode: 3
-        inWeight: 0.333
-        outWeight: 0.2940554
-      - serializedVersion: 3
-        time: 0.6681702
-        value: 0.2174691
-        inSlope: -1.565806
-        outSlope: -1.565806
-        tangentMode: 0
-        weightedMode: 3
-        inWeight: 0.3605607
-        outWeight: 0.3446763
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 3
-        inWeight: 0.09374858
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    FootRotationCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0.5764588
-        outSlope: 0.5764588
-        tangentMode: 0
-        weightedMode: 3
-        inWeight: 0
-        outWeight: 0.4956417
-      - serializedVersion: 3
-        time: 0.4378169
-        value: 0.2035736
-        inSlope: -0.2411275
-        outSlope: -0.2411275
-        tangentMode: 0
-        weightedMode: 3
-        inWeight: 0.3333333
-        outWeight: 0.4033037
-      - serializedVersion: 3
-        time: 0.7841034
-        value: -0.1339308
-        inSlope: 0.3331003
-        outSlope: 0.3331003
-        tangentMode: 0
-        weightedMode: 3
-        inWeight: 0.3333333
-        outWeight: 0.3333333
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0.3498169
-        outSlope: 0.3498169
-        tangentMode: 0
-        weightedMode: 3
-        inWeight: 0.5534658
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    DoStepAnimationOnDistanceFactor: 0.055
-  UseGluing: 1
-  MainGlueBlend: 1
-  GlueRangeThreshold: 0.25
-  GlueFadeInSpeed: 0.85
-  AllowGlueBelowFoot: 0.2
-  GlueFadeOutSpeed: 0.5
-  UnglueOn: 30
-  AllowGlueDrag: 0.9
-  GlueMode: 0
-  OnlyLocalAnimation: 0
-  SmoothSuddenSteps: 0
-  LegElevateBlend: 0
-  LegElevateHeightLimit: 0.6
-  FootRotationBlend: 1
-  FootAlignRapidity: 0.75
-  AnimateFeet: 0
-  LimitFeetYaw: 30
-  AnimationFloorLevel: 0.001
-  _Editor_Foldout_Setup_LegsList: 1
-  _Editor_EnsureCount: 0
-  _Editor_OnValidateTrigger: 0
-  _EditorAllowAutoUpdateFeetParams: 1
-  _EditorCategory: 0
-  _EditorSetupCategory: 2
-  _EditorMotionCategory: 3
-  _EditorExtraCategory: 0
-  setupPose:
-    MainHipsPose:
-      SourceTransform: {fileID: 0}
-      RotationInRoot: {x: 0, y: 0, z: 0, w: 0}
-      PositionInRoot: {x: 0, y: 0, z: 0}
-    HipsPoses: []
-    LegPoses: []
-  ExtraSetupPoses: []
-  IKHintMode: 0
-  LimitLegStretch: 1
-  FeetYOffset: 0
-  FeetLengthAdjust: 0
-  baseTransform: {fileID: 0}
-  Hips: {fileID: 4416894290285122627}
-  ScaleReferenceMode: 3
-  finalScaleReference: 0.105000004
-  finalScaleReferenceSqrt: 0.1
-  customScaleReferenceValue: 0.5
-  DelayedInitialization: 0
-  Calibrate: 1
-  AnimatePhysics: 0
-  UnscaledDeltaTime: 0
-  DisableIfInvisible: {fileID: 0}
-  DisableIfInvisibleExtraRenderers: []
-  FadeOffAtDistance: 0
-  GroundMask:
-    serializedVersion: 2
-    m_Bits: 1
-  RaycastHitTrigger: 1
-  CastDistance: 1
-  RaycastStartHeight: 0
-  RaycastStartHeightMul: 1
-  RaycastStyle: 3
-  RaycastShape: 0
-  SpherecastRealign: 0
-  SpherecastResize: 1
-  NoRaycastGroundBehaviour: 2
-  ZeroStepsOnNoRaycast: 0
-  NoRaycast_KeepAttachedUntilStretch: 1.1
-  BodyStepDown: 0.5
-  MaxBodyStepUp: 0
-  UngroundFadeSpeed: 0.1
-  IsMovingFadeSpeed: 0.4
-  LegsAnimatorBlend: 1
-  _Editor_DefaultModuleOnStart: {fileID: 11400000, guid: 7d9bd86d54a7a594cb1793f9533e2e00, type: 2}
-  _Editor_LegHelperModule: {fileID: 11400000, guid: 0645fbea8059aec47aa6ae9d2c93c1d4, type: 2}
 --- !u!114 &5911078949332457144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1007,7 +275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 163d2c8446aa6ae42a718abaa805b8f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: AD_FimpAnimating::FIMSpace.LeaningAnimator
-  _EditorDrawSetup: 0
+  _EditorDrawSetup: 1
   Leaning:
     GroundAlignBlend: 1
     GroundAlignRapidity: 1
@@ -1126,6 +394,741 @@ MonoBehaviour:
     FadeOffLeaningParam: 
     FadeOffSpeed: 0.5
     AccelValueThreshold: 0.25
+--- !u!114 &1744640763137718166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140819088586147827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f3505aa6d98bd4418e0744d5ab56fdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AD_FimpAnimating::FIMSpace.FProceduralAnimation.LegsAnimator
+  Mecanim: {fileID: 0}
+  GroundedParameter: 
+  MovingParameter: 
+  User_IsMovingMecanim_NotMovingFloat_Threshold: 0.1
+  Rigidbody: {fileID: 0}
+  UseRigidbodyVelocityForIsMoving: 0
+  UseRaycastsForIsGrounded: 0
+  SlidingParameter: 
+  SpineBone: {fileID: 0}
+  ChestBone: {fileID: 0}
+  RagdolledParameter: 
+  SwingHelper: 0
+  GluingFloorLevel: 0.05
+  GluingFloorLevelUseOnMoving: 0
+  GluingFloorLevelOnMoving: 0
+  StepPointsOverlapRadius: 0
+  UseStepPointsOverlapRadiusOnMoving: 0
+  StepPointsOverlapRadiusOnMoving: 0
+  MotionInfluence:
+    AdvancedInfluence: 0
+    AxisMotionInfluence: {x: 0, y: 1, z: 1}
+    AxisMotionInfluenceBackwards: {x: 1, y: 1, z: 1}
+  Event_OnStep:
+    m_PersistentCalls:
+      m_Calls: []
+  EventExecuteSooner: 0.05
+  SendOnMovingGlue: 0
+  SendOnStopping: 0
+  StepEventOnLanding: 0
+  StepInfoReceiver: {fileID: 0}
+  ExtraPelvisOffset: {x: 0, y: 0, z: 0}
+  ReposeGluingAfter: 0
+  GlueOnlyOnIdle: 0
+  LocalWorldUp: 1
+  DisableCustomModules: 0
+  CustomModules: []
+  ImpulsesPowerMultiplier: 0
+  ImpulsesDurationMultiplier: 1
+  ImpulsesDampUpPushes: 0
+  DebugPushHipsImpulse:
+    OptionalName: Impulse
+    PowerMultiplier: 1
+    ImpulseDuration: 0.6
+    WorldTranslation: {x: 0, y: 0, z: 0}
+    LocalTranslation: {x: 0, y: -1, z: 0}
+    HipsRotate: {x: 0, y: 0, z: 0}
+    InheritElasticness: 0.75
+    ImpulseCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.2
+        value: 1
+        inSlope: 3.4375
+        outSlope: 3.4375
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    YAxisMultiplyCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    AlignWithDesiredMoveDirection: 0
+  ExtraHipsHubs: []
+  HipsHubsHandling: 1
+  HipsHubsBlend: 1
+  HubsBackBonesBlend:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  HubBackBonesElasticity: 0.1
+  HipsSetup:
+    HipsElasticityBlend: 1
+    HipsMuscle:
+      DesiredPosition: {x: 0, y: 0, z: 0}
+      Acceleration: 10000
+      AccelerationLimit: 5000
+      Damping: 10
+      BrakePower: 0.2
+    HipsRotElasticityBlend: 0
+    HipsRotMuscle:
+      DesiredRotation: {x: 0, y: 0, z: 0, w: 0}
+      Acceleration: 5000
+      AccelerationLimit: 1000
+      Damping: 10
+      BrakePower: 0.2
+  StabilityAlgorithm: 1
+  UseHips: 0
+  HipsHeightStepBlend: 1
+  HipsHeightStepSpeed: 0.7
+  HipsAdjustStyle: 0
+  StabilizeCenterOfMass: 0.45
+  AnimationIsStablePose: 0.75
+  StabilizingSpeed: 0.375
+  PushHipsOnLegMove: 0.1
+  NormalizePush: 0
+  PushReactionSpeed: 0.3
+  PushYBlend: 1
+  HipsStretchPreventer: 0.15
+  StretchPreventerSpeed: 0.8
+  StabilizeOnIsMoving: 0.5
+  _Hips_Modules_ExtraWOffset: {x: 0, y: 0, z: 0}
+  _Hips_Modules_ExtraRotOffset: {x: 0, y: 0, z: 0}
+  _Hips_Modules_ExtraWOffsetElastic: {x: 0, y: 0, z: 0}
+  _Hips_Modules_ExtraWOffsetSmoothDamp: {x: 0, y: 0, z: 0}
+  _HipsOffsetSmoothDampDuration: 0.08
+  Legs:
+  - G_CustomForceAttach: 0
+    G_CustomForceNOTDetach: 0
+    G_CustomForceDetach: 0
+    G_CustomForceNOTAttach: 0
+    _FinalIKPos: {x: 0, y: 0, z: 0}
+    Owner: {fileID: 1744640763137718166}
+    LegBlendWeight: 1
+    LegMoveSpeedMultiplier: 1
+    LegRaiseMultiplier: 1
+    GlueThresholdMultiplier: 1
+    GluePointOffset: {x: 0, y: 0}
+    LegStretchMultiplier: 1
+    CustomLegAnimating: {fileID: 0}
+    FootPitchOffset: 0
+    BoneStart: {fileID: 3298291524308145311}
+    BoneMid: {fileID: 6192019486111124541}
+    BoneEnd: {fileID: 4193884815610726959}
+    Side: 1
+    OppositeLegIndex: 4
+    RaycastPrecision: 0
+    UseFeet: 0
+    BoneFeet: {fileID: 0}
+    FeetSensitivity: 0.5
+    InverseHint: 0
+    AnkleToHeel: {x: 0.0008579679, y: 0.04915308, z: -0.0000000096669535}
+    AnkleToFeetEnd: {x: 0.012921355, y: 0.048942514, z: 0.010123898}
+    AnkleRight: {x: -0.6426898, y: 0.011218194, z: 0.76604456}
+    AnkleUp: {x: -0.017452419, y: -0.9998478, z: 0.000000091060095}
+    AnkleForward: {x: 0.76592785, y: -0.013369169, z: 0.6427876}
+    FootMiddlePosition: 0.5
+    AnkleYawCorrection: 0
+  - G_CustomForceAttach: 0
+    G_CustomForceNOTDetach: 0
+    G_CustomForceDetach: 0
+    G_CustomForceNOTAttach: 0
+    _FinalIKPos: {x: 0, y: 0, z: 0}
+    Owner: {fileID: 1744640763137718166}
+    LegBlendWeight: 1
+    LegMoveSpeedMultiplier: 1
+    LegRaiseMultiplier: 1
+    GlueThresholdMultiplier: 1
+    GluePointOffset: {x: 0, y: 0}
+    LegStretchMultiplier: 1
+    CustomLegAnimating: {fileID: 0}
+    FootPitchOffset: 0
+    BoneStart: {fileID: 2114162834289404310}
+    BoneMid: {fileID: 851555433967332506}
+    BoneEnd: {fileID: 7173330756275624883}
+    Side: 1
+    OppositeLegIndex: 4
+    RaycastPrecision: 0
+    UseFeet: 0
+    BoneFeet: {fileID: 0}
+    FeetSensitivity: 0.5
+    InverseHint: 0
+    AnkleToHeel: {x: -0.0063166805, y: 0.051445063, z: 0}
+    AnkleToFeetEnd: {x: -0.0063166805, y: 0.051445063, z: 0.015750002}
+    AnkleRight: {x: -0.9925461, y: -0.12186957, z: 0}
+    AnkleUp: {x: 0.121869564, y: -0.992546, z: 0}
+    AnkleForward: {x: 0, y: 0, z: 1}
+    FootMiddlePosition: 0.5
+    AnkleYawCorrection: 0
+  - G_CustomForceAttach: 0
+    G_CustomForceNOTDetach: 0
+    G_CustomForceDetach: 0
+    G_CustomForceNOTAttach: 0
+    _FinalIKPos: {x: 0, y: 0, z: 0}
+    Owner: {fileID: 1744640763137718166}
+    LegBlendWeight: 1
+    LegMoveSpeedMultiplier: 1
+    LegRaiseMultiplier: 1
+    GlueThresholdMultiplier: 1
+    GluePointOffset: {x: 0, y: 0}
+    LegStretchMultiplier: 1
+    CustomLegAnimating: {fileID: 0}
+    FootPitchOffset: 0
+    BoneStart: {fileID: 890614471030752259}
+    BoneMid: {fileID: 8184638533179646297}
+    BoneEnd: {fileID: 3877799963092192068}
+    Side: 1
+    OppositeLegIndex: 5
+    RaycastPrecision: 0
+    UseFeet: 0
+    BoneFeet: {fileID: 0}
+    FeetSensitivity: 0.5
+    InverseHint: 0
+    AnkleToHeel: {x: -0.015923813, y: 0.043456554, z: 0.0000000030478735}
+    AnkleToFeetEnd: {x: -0.027252387, y: 0.039305415, z: 0.010123917}
+    AnkleRight: {x: -0.6035442, y: -0.22115733, z: -0.7660445}
+    AnkleUp: {x: 0.34405968, y: -0.93894786, z: 0.0000000647658}
+    AnkleForward: {x: -0.7192758, y: -0.263565, z: 0.6427877}
+    FootMiddlePosition: 0.5
+    AnkleYawCorrection: 0
+  - G_CustomForceAttach: 0
+    G_CustomForceNOTDetach: 0
+    G_CustomForceDetach: 0
+    G_CustomForceNOTAttach: 0
+    _FinalIKPos: {x: 0, y: 0, z: 0}
+    Owner: {fileID: 1744640763137718166}
+    LegBlendWeight: 1
+    LegMoveSpeedMultiplier: 1
+    LegRaiseMultiplier: 1
+    GlueThresholdMultiplier: 1
+    GluePointOffset: {x: 0, y: 0}
+    LegStretchMultiplier: 1
+    CustomLegAnimating: {fileID: 0}
+    FootPitchOffset: 0
+    BoneStart: {fileID: 3532288326173847348}
+    BoneMid: {fileID: 4088632512095349966}
+    BoneEnd: {fileID: 7731939615152876468}
+    Side: 2
+    OppositeLegIndex: 0
+    RaycastPrecision: 0
+    UseFeet: 0
+    BoneFeet: {fileID: 0}
+    FeetSensitivity: 0.5
+    InverseHint: 0
+    AnkleToHeel: {x: 0.0008579865, y: 0.049153082, z: 0.000000008959495}
+    AnkleToFeetEnd: {x: 0.012921365, y: 0.048942514, z: -0.010123915}
+    AnkleRight: {x: 0.6426899, y: -0.011217926, z: 0.76604444}
+    AnkleUp: {x: -0.017452419, y: -0.9998478, z: 0.00000015066473}
+    AnkleForward: {x: 0.7659278, y: -0.013369326, z: -0.64278775}
+    FootMiddlePosition: 0.5
+    AnkleYawCorrection: 0
+  - G_CustomForceAttach: 0
+    G_CustomForceNOTDetach: 0
+    G_CustomForceDetach: 0
+    G_CustomForceNOTAttach: 0
+    _FinalIKPos: {x: 0, y: 0, z: 0}
+    Owner: {fileID: 1744640763137718166}
+    LegBlendWeight: 1
+    LegMoveSpeedMultiplier: 1
+    LegRaiseMultiplier: 1
+    GlueThresholdMultiplier: 1
+    GluePointOffset: {x: 0, y: 0}
+    LegStretchMultiplier: 1
+    CustomLegAnimating: {fileID: 0}
+    FootPitchOffset: 0
+    BoneStart: {fileID: 8070850730838707812}
+    BoneMid: {fileID: 2289657258848355406}
+    BoneEnd: {fileID: 989042320080766594}
+    Side: 2
+    OppositeLegIndex: 0
+    RaycastPrecision: 0
+    UseFeet: 0
+    BoneFeet: {fileID: 0}
+    FeetSensitivity: 0.5
+    InverseHint: 0
+    AnkleToHeel: {x: -0.0063166767, y: 0.051445063, z: 0}
+    AnkleToFeetEnd: {x: -0.0063166767, y: 0.051445063, z: -0.015750002}
+    AnkleRight: {x: 0.9925461, y: 0.12186954, z: 0}
+    AnkleUp: {x: 0.121869564, y: -0.992546, z: 0}
+    AnkleForward: {x: 0, y: 0, z: -1}
+    FootMiddlePosition: 0.5
+    AnkleYawCorrection: 0
+  - G_CustomForceAttach: 0
+    G_CustomForceNOTDetach: 0
+    G_CustomForceDetach: 0
+    G_CustomForceNOTAttach: 0
+    _FinalIKPos: {x: 0, y: 0, z: 0}
+    Owner: {fileID: 1744640763137718166}
+    LegBlendWeight: 1
+    LegMoveSpeedMultiplier: 1
+    LegRaiseMultiplier: 1
+    GlueThresholdMultiplier: 1
+    GluePointOffset: {x: 0, y: 0}
+    LegStretchMultiplier: 1
+    CustomLegAnimating: {fileID: 0}
+    FootPitchOffset: 0
+    BoneStart: {fileID: 5927071592063311832}
+    BoneMid: {fileID: 5224546208210249626}
+    BoneEnd: {fileID: 79231911085781012}
+    Side: 2
+    OppositeLegIndex: 2
+    RaycastPrecision: 0
+    UseFeet: 0
+    BoneFeet: {fileID: 0}
+    FeetSensitivity: 0.5
+    InverseHint: 0
+    AnkleToHeel: {x: -0.015923794, y: 0.043456588, z: 0.000000010498453}
+    AnkleToFeetEnd: {x: -0.02725241, y: 0.039305426, z: -0.010123896}
+    AnkleRight: {x: 0.60354406, y: 0.22115749, z: -0.7660445}
+    AnkleUp: {x: 0.34405968, y: -0.93894786, z: 0.000000005161162}
+    AnkleForward: {x: -0.71927583, y: -0.26356503, z: -0.6427879}
+    FootMiddlePosition: 0.5
+    AnkleYawCorrection: 0
+  BaseLegAnimating:
+    StepMoveDuration: 0.18
+    MoveToGoalCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 3
+        inWeight: 0
+        outWeight: 0.1842105
+      - serializedVersion: 3
+        time: 0.4885197
+        value: 0.8972011
+        inSlope: 1.38764
+        outSlope: 1.38764
+        tangentMode: 0
+        weightedMode: 3
+        inWeight: 0.3333333
+        outWeight: 0.3333333
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 3
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    SpherizeTrack:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0.6958197
+        outSlope: 0.6958197
+        tangentMode: 0
+        weightedMode: 3
+        inWeight: 0
+        outWeight: 0.460011
+      - serializedVersion: 3
+        time: 0.4
+        value: 0.3
+        inSlope: -0.04204308
+        outSlope: -0.04204308
+        tangentMode: 0
+        weightedMode: 3
+        inWeight: 0.333
+        outWeight: 0.3410656
+      - serializedVersion: 3
+        time: 0.85
+        value: 0
+        inSlope: -0.2721428
+        outSlope: -0.2721428
+        tangentMode: 0
+        weightedMode: 3
+        inWeight: 0.3953607
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    SpherizePower: 0.3
+    MinFootRaise: 0.1
+    MaxFootRaise: 0.4
+    RaiseYAxisCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0.8504464
+        outSlope: 0.8504464
+        tangentMode: 0
+        weightedMode: 3
+        inWeight: 0
+        outWeight: 0.6517575
+      - serializedVersion: 3
+        time: 0.2731183
+        value: 0.45
+        inSlope: 0.9770691
+        outSlope: 0.9770691
+        tangentMode: 0
+        weightedMode: 3
+        inWeight: 0.3333333
+        outWeight: 0.3387407
+      - serializedVersion: 3
+        time: 0.505118
+        value: 0.5
+        inSlope: -0.2710344
+        outSlope: -0.2710344
+        tangentMode: 0
+        weightedMode: 3
+        inWeight: 0.3333333
+        outWeight: 0.3333333
+      - serializedVersion: 3
+        time: 0.9110107
+        value: 0
+        inSlope: -0.1500788
+        outSlope: -0.1500788
+        tangentMode: 0
+        weightedMode: 3
+        inWeight: 0.5409704
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    AllowSpeedups: 0.4
+    AllowDetachBefore: 1
+    PushHipsOnMoveCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 5.630541
+        outSlope: 5.630541
+        tangentMode: 0
+        weightedMode: 3
+        inWeight: 0
+        outWeight: 0.198735
+      - serializedVersion: 3
+        time: 0.383
+        value: 0.3733972
+        inSlope: -0.1664574
+        outSlope: -0.1664574
+        tangentMode: 0
+        weightedMode: 3
+        inWeight: 0.333
+        outWeight: 0.2940554
+      - serializedVersion: 3
+        time: 0.7075226
+        value: 0.1460427
+        inSlope: -1.565806
+        outSlope: -1.565806
+        tangentMode: 0
+        weightedMode: 3
+        inWeight: 0.3605607
+        outWeight: 0.3446763
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 3
+        inWeight: 0.09374858
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    FootRotationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0.5764588
+        outSlope: 0.5764588
+        tangentMode: 0
+        weightedMode: 3
+        inWeight: 0
+        outWeight: 0.4956417
+      - serializedVersion: 3
+        time: 0.4378169
+        value: 0.2035736
+        inSlope: -0.2411275
+        outSlope: -0.2411275
+        tangentMode: 0
+        weightedMode: 3
+        inWeight: 0.3333333
+        outWeight: 0.4033037
+      - serializedVersion: 3
+        time: 0.7841034
+        value: -0.1339308
+        inSlope: 0.3331003
+        outSlope: 0.3331003
+        tangentMode: 0
+        weightedMode: 3
+        inWeight: 0.3333333
+        outWeight: 0.3333333
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0.3498169
+        outSlope: 0.3498169
+        tangentMode: 0
+        weightedMode: 3
+        inWeight: 0.5534658
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    DoStepAnimationOnDistanceFactor: 0.055
+  UseGluing: 1
+  MainGlueBlend: 1
+  GlueRangeThreshold: 0.18
+  GlueFadeInSpeed: 0.85
+  AllowGlueBelowFoot: 0.2
+  GlueFadeOutSpeed: 1
+  UnglueOn: 30
+  AllowGlueDrag: 1
+  GlueMode: 0
+  OnlyLocalAnimation: 0
+  SmoothSuddenSteps: 0.85
+  LegElevateBlend: 0.7
+  LegElevateHeightLimit: 0.6
+  FootRotationBlend: 1
+  FootAlignRapidity: 0.75
+  AnimateFeet: 1
+  LimitFeetYaw: 30
+  AnimationFloorLevel: 0.001
+  _Editor_Foldout_Setup_LegsList: 1
+  _Editor_EnsureCount: 0
+  _Editor_OnValidateTrigger: 0
+  _EditorAllowAutoUpdateFeetParams: 1
+  _EditorCategory: 0
+  _EditorSetupCategory: 0
+  _EditorMotionCategory: 2
+  _EditorExtraCategory: 0
+  setupPose:
+    MainHipsPose:
+      SourceTransform: {fileID: 7567130247591860503}
+      RotationInRoot: {x: 0, y: 0, z: 0, w: 1}
+      PositionInRoot: {x: 0, y: 0.07, z: 0}
+    HipsPoses: []
+    LegPoses:
+    - UpperLegPose:
+        SourceTransform: {fileID: 3298291524308145311}
+        RotationInRoot: {x: 0.31406656, y: 0.28278682, z: 0.67351794, w: 0.60643834}
+        PositionInRoot: {x: -0.06, y: 0.11, z: 0.04}
+      LowerLegPose:
+        SourceTransform: {fileID: 6192019486111124541}
+        RotationInRoot: {x: 0.4091569, y: 0.10581517, z: 0.8774398, w: 0.22692138}
+        PositionInRoot: {x: -0.11114132, y: 0.10163773, z: 0.100947835}
+      AnklePose:
+        SourceTransform: {fileID: 4193884815610726959}
+        RotationInRoot: {x: 0.42260218, y: -0.0036879182, z: 0.90627337, w: -0.007908888}
+        PositionInRoot: {x: -0.12983909, y: 0.04916054, z: 0.12323098}
+      FeetPose:
+        SourceTransform: {fileID: 0}
+        RotationInRoot: {x: 0, y: 0, z: 0, w: 0}
+        PositionInRoot: {x: 0, y: 0, z: 0}
+    - UpperLegPose:
+        SourceTransform: {fileID: 2114162834289404310}
+        RotationInRoot: {x: -0, y: 0, z: 0.66261995, w: 0.7489558}
+        PositionInRoot: {x: -0.07, y: 0.09, z: 0}
+      LowerLegPose:
+        SourceTransform: {fileID: 851555433967332506}
+        RotationInRoot: {x: -0, y: 0, z: 0.9483236, w: 0.31730473}
+        PositionInRoot: {x: -0.14940369, y: 0.099749565, z: 0}
+      AnklePose:
+        SourceTransform: {fileID: 7173330756275624883}
+        RotationInRoot: {x: -0, y: 0, z: 0.9981348, w: 0.061048597}
+        PositionInRoot: {x: -0.18551266, y: 0.051831413, z: 0}
+      FeetPose:
+        SourceTransform: {fileID: 0}
+        RotationInRoot: {x: 0, y: 0, z: 0, w: 0}
+        PositionInRoot: {x: 0, y: 0, z: 0}
+    - UpperLegPose:
+        SourceTransform: {fileID: 890614471030752259}
+        RotationInRoot: {x: -0.2800353, y: -0.3165224, z: 0.60053766, w: 0.67878455}
+        PositionInRoot: {x: -0.06, y: 0.075, z: -0.04}
+      LowerLegPose:
+        SourceTransform: {fileID: 8184638533179646297}
+        RotationInRoot: {x: -0.38282806, y: -0.179022, z: 0.82097745, w: 0.38391402}
+        PositionInRoot: {x: -0.11104004, y: 0.08474952, z: -0.100826785}
+      AnklePose:
+        SourceTransform: {fileID: 3877799963092192068}
+        RotationInRoot: {x: -0.4161178, y: -0.07383865, z: 0.89236766, w: 0.1583476}
+        PositionInRoot: {x: -0.14063807, y: 0.046282154, z: -0.13610029}
+      FeetPose:
+        SourceTransform: {fileID: 0}
+        RotationInRoot: {x: 0, y: 0, z: 0, w: 0}
+        PositionInRoot: {x: 0, y: 0, z: 0}
+    - UpperLegPose:
+        SourceTransform: {fileID: 3532288326173847348}
+        RotationInRoot: {x: 0.67351794, y: 0.60643834, z: 0.31406656, w: 0.28278682}
+        PositionInRoot: {x: 0.06, y: 0.11, z: 0.04}
+      LowerLegPose:
+        SourceTransform: {fileID: 4088632512095349966}
+        RotationInRoot: {x: 0.8774398, y: 0.22692138, z: 0.4091569, w: 0.10581517}
+        PositionInRoot: {x: 0.11114132, y: 0.10163773, z: 0.100947835}
+      AnklePose:
+        SourceTransform: {fileID: 7731939615152876468}
+        RotationInRoot: {x: 0.90627337, y: -0.007908821, z: 0.42260218, w: -0.0036880376}
+        PositionInRoot: {x: 0.1298391, y: 0.04916054, z: 0.12323098}
+      FeetPose:
+        SourceTransform: {fileID: 0}
+        RotationInRoot: {x: 0, y: 0, z: 0, w: 0}
+        PositionInRoot: {x: 0, y: 0, z: 0}
+    - UpperLegPose:
+        SourceTransform: {fileID: 8070850730838707812}
+        RotationInRoot: {x: 0.66261995, y: 0.7489558, z: 0, w: 0}
+        PositionInRoot: {x: 0.07, y: 0.09, z: 0}
+      LowerLegPose:
+        SourceTransform: {fileID: 2289657258848355406}
+        RotationInRoot: {x: 0.9483236, y: 0.31730473, z: 0, w: 0}
+        PositionInRoot: {x: 0.14940369, y: 0.099749565, z: 0}
+      AnklePose:
+        SourceTransform: {fileID: 989042320080766594}
+        RotationInRoot: {x: 0.9981348, y: 0.061048597, z: 0, w: 0}
+        PositionInRoot: {x: 0.18551266, y: 0.051831413, z: 0}
+      FeetPose:
+        SourceTransform: {fileID: 0}
+        RotationInRoot: {x: 0, y: 0, z: 0, w: 0}
+        PositionInRoot: {x: 0, y: 0, z: 0}
+    - UpperLegPose:
+        SourceTransform: {fileID: 5927071592063311832}
+        RotationInRoot: {x: -0.60053766, y: -0.67878455, z: 0.2800353, w: 0.3165224}
+        PositionInRoot: {x: 0.06, y: 0.075, z: -0.04}
+      LowerLegPose:
+        SourceTransform: {fileID: 5224546208210249626}
+        RotationInRoot: {x: -0.82097745, y: -0.38391402, z: 0.38282803, w: 0.17902203}
+        PositionInRoot: {x: 0.1110397, y: 0.08474952, z: -0.100827076}
+      AnklePose:
+        SourceTransform: {fileID: 79231911085781012}
+        RotationInRoot: {x: -0.89236766, y: -0.1583476, z: 0.41611785, w: 0.07383871}
+        PositionInRoot: {x: 0.14063768, y: 0.046282154, z: -0.13610062}
+      FeetPose:
+        SourceTransform: {fileID: 0}
+        RotationInRoot: {x: 0, y: 0, z: 0, w: 0}
+        PositionInRoot: {x: 0, y: 0, z: 0}
+  ExtraSetupPoses: []
+  IKHintMode: 5
+  LimitLegStretch: 1
+  FeetYOffset: 0
+  FeetLengthAdjust: 0
+  baseTransform: {fileID: 0}
+  Hips: {fileID: 7567130247591860503}
+  ScaleReferenceMode: 3
+  finalScaleReference: 0.105000004
+  finalScaleReferenceSqrt: 0.1
+  customScaleReferenceValue: 0.5
+  DelayedInitialization: 0
+  Calibrate: 1
+  AnimatePhysics: 0
+  UnscaledDeltaTime: 0
+  DisableIfInvisible: {fileID: 0}
+  DisableIfInvisibleExtraRenderers: []
+  FadeOffAtDistance: 0
+  GroundMask:
+    serializedVersion: 2
+    m_Bits: 1
+  RaycastHitTrigger: 1
+  CastDistance: 2
+  RaycastStartHeight: 0
+  RaycastStartHeightMul: 1
+  RaycastStyle: 0
+  RaycastShape: 0
+  SpherecastRealign: 0
+  SpherecastResize: 1
+  NoRaycastGroundBehaviour: 1
+  ZeroStepsOnNoRaycast: 0
+  NoRaycast_KeepAttachedUntilStretch: 1.1
+  BodyStepDown: 0.5
+  MaxBodyStepUp: 0
+  UngroundFadeSpeed: 0.1
+  IsMovingFadeSpeed: 0.4
+  LegsAnimatorBlend: 1
+  _Editor_DefaultModuleOnStart: {fileID: 11400000, guid: 7d9bd86d54a7a594cb1793f9533e2e00, type: 2}
+  _Editor_LegHelperModule: {fileID: 11400000, guid: 0645fbea8059aec47aa6ae9d2c93c1d4, type: 2}
 --- !u!1 &1185862801782938637
 GameObject:
   m_ObjectHideFlags: 0
@@ -1171,8 +1174,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1406bb0b613343248bba1c664e68d2b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: MudBun::MudBun.MudRenderer
-  MaxVoxelsK: 256
-  MaxChunks: 64
+  MaxVoxelsK: 2048
+  MaxChunks: 1024
   ShowGpuMemoryUsage: 0
   AutoAdjustBudgetsToHighWaterMarks: 0
   AutoAdjustBudgetsToHighWaterMarksMarginPercent: 15
@@ -1379,10 +1382,10 @@ MonoBehaviour:
   m_symmetry: 0
   m_countAsBone: 0
   m_canCountAsBone: 1
-  m_radius: 0.07
+  m_radius: 0.06
   m_angle: 8
   m_round: 0
---- !u!1 &1716063298393161520
+--- !u!1 &1577106386508743343
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1390,193 +1393,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6548597755595032807}
-  - component: {fileID: 7320701276902645306}
-  - component: {fileID: 2081115642902369901}
+  - component: {fileID: 8070850730838707812}
+  - component: {fileID: 8301845368660373331}
+  - component: {fileID: 5196270465290113020}
   m_Layer: 0
-  m_Name: R2 Knee Brush
+  m_Name: R2 Leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6548597755595032807
+--- !u!4 &8070850730838707812
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1716063298393161520}
+  m_GameObject: {fileID: 1577106386508743343}
   serializedVersion: 2
-  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0.06, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7889456645011551473}
-  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
---- !u!114 &7320701276902645306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1716063298393161520}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2390520846a478242a1b2271b4ddd597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: MudBun::MudBun.MudMaterial
-  m_sharedMaterial: {fileID: 0}
-  m_color: {r: 0.8980392, g: 0.3372549, b: 0.23529412, a: 1}
-  m_emission: {r: 0, g: 0, b: 0, a: 1}
-  m_metallic: 0
-  m_smoothness: 0.5
-  m_textureIndex: 0
-  m_splatSize: 1
-  m_blendTightness: 0
-  m_contributeMaterial: 1
---- !u!114 &2081115642902369901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1716063298393161520}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73c6499a22a3e0a4098d1b3f96db799a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: MudBun::MudBun.MudSolidAngle
-  Hidden: 0
-  m_operator: 0
-  m_booleanOperatorType: 0
-  m_dyeBlendMode: 3
-  m_blend: 0
-  m_symmetry: 0
-  m_countAsBone: 0
-  m_canCountAsBone: 1
-  m_radius: 0.07
-  m_angle: 8
-  m_round: 0
---- !u!1 &2167150717746321494
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7855100388855851781}
-  - component: {fileID: 359879501665695329}
-  - component: {fileID: 8692934151331585183}
-  m_Layer: 0
-  m_Name: R1 Foot Brush
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7855100388855851781
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2167150717746321494}
-  serializedVersion: 2
-  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0.06, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8043439589287124070}
-  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
---- !u!114 &359879501665695329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2167150717746321494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2390520846a478242a1b2271b4ddd597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: MudBun::MudBun.MudMaterial
-  m_sharedMaterial: {fileID: 0}
-  m_color: {r: 0.96862745, g: 0.6392157, b: 0.36078432, a: 1}
-  m_emission: {r: 0, g: 0, b: 0, a: 1}
-  m_metallic: 0
-  m_smoothness: 0.5
-  m_textureIndex: 0
-  m_splatSize: 1
-  m_blendTightness: 0
-  m_contributeMaterial: 1
---- !u!114 &8692934151331585183
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2167150717746321494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73c6499a22a3e0a4098d1b3f96db799a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: MudBun::MudBun.MudSolidAngle
-  Hidden: 0
-  m_operator: 0
-  m_booleanOperatorType: 0
-  m_dyeBlendMode: 3
-  m_blend: 0.11
-  m_symmetry: 0
-  m_countAsBone: 0
-  m_canCountAsBone: 1
-  m_radius: 0.07
-  m_angle: 3
-  m_round: 0
---- !u!1 &2722285399291915935
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4307476501030616441}
-  - component: {fileID: 6564801008804144214}
-  - component: {fileID: 6122919461368965980}
-  m_Layer: 0
-  m_Name: R1 Leg
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4307476501030616441
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2722285399291915935}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.62755096, y: 0.7478862, z: 0.13912475, w: 0.16580243}
-  m_LocalPosition: {x: 0.06, y: -0.02, z: 0.040000003}
+  m_LocalRotation: {x: 0.66261995, y: 0.7489558, z: 0, w: 0}
+  m_LocalPosition: {x: 0.07, y: 0.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6841707548347929485}
+  - {fileID: 2289657258848355406}
   m_Father: {fileID: 7567130247591860503}
-  m_LocalEulerAnglesHint: {x: 0, y: 155, z: 80}
---- !u!114 &6564801008804144214
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 83}
+--- !u!114 &8301845368660373331
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2722285399291915935}
+  m_GameObject: {fileID: 1577106386508743343}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2390520846a478242a1b2271b4ddd597, type: 3}
@@ -1591,13 +1440,13 @@ MonoBehaviour:
   m_splatSize: 1
   m_blendTightness: 0
   m_contributeMaterial: 1
---- !u!114 &6122919461368965980
+--- !u!114 &5196270465290113020
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2722285399291915935}
+  m_GameObject: {fileID: 1577106386508743343}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 73c6499a22a3e0a4098d1b3f96db799a, type: 3}
@@ -1613,6 +1462,115 @@ MonoBehaviour:
   m_canCountAsBone: 1
   m_radius: 0.08
   m_angle: 10
+  m_round: 0
+--- !u!1 &2034226806905663176
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7731939615152876468}
+  m_Layer: 0
+  m_Name: R1 Foot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7731939615152876468
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034226806905663176}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.00000006354456, y: -0.000000005067015, z: 0.258819, w: 0.9659259}
+  m_LocalPosition: {x: 0, y: 0.06, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4975705046659721982}
+  m_Father: {fileID: 4088632512095349966}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 30}
+--- !u!1 &2643673720569814625
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4262250218191357453}
+  - component: {fileID: 1300491408151701629}
+  - component: {fileID: 3427891256430275582}
+  m_Layer: 0
+  m_Name: R2 Foot Brush
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4262250218191357453
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2643673720569814625}
+  serializedVersion: 2
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0.06, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 989042320080766594}
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
+--- !u!114 &1300491408151701629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2643673720569814625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2390520846a478242a1b2271b4ddd597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MudBun::MudBun.MudMaterial
+  m_sharedMaterial: {fileID: 0}
+  m_color: {r: 0.96862745, g: 0.6392157, b: 0.36078432, a: 1}
+  m_emission: {r: 0, g: 0, b: 0, a: 1}
+  m_metallic: 0
+  m_smoothness: 0.5
+  m_textureIndex: 0
+  m_splatSize: 1
+  m_blendTightness: 0
+  m_contributeMaterial: 1
+--- !u!114 &3427891256430275582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2643673720569814625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73c6499a22a3e0a4098d1b3f96db799a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MudBun::MudBun.MudSolidAngle
+  Hidden: 0
+  m_operator: 0
+  m_booleanOperatorType: 0
+  m_dyeBlendMode: 3
+  m_blend: 0.11
+  m_symmetry: 0
+  m_countAsBone: 0
+  m_canCountAsBone: 1
+  m_radius: 0.04
+  m_angle: 3
   m_round: 0
 --- !u!1 &2763769170193690566
 GameObject:
@@ -1688,9 +1646,42 @@ MonoBehaviour:
   m_symmetry: 0
   m_countAsBone: 0
   m_canCountAsBone: 1
-  m_radius: 0.07
+  m_radius: 0.04
   m_angle: 3
   m_round: 0
+--- !u!1 &3264065366156635535
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4088632512095349966}
+  m_Layer: 0
+  m_Name: R1 Knee
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4088632512095349966
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3264065366156635535}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0.46174863, w: 0.8870109}
+  m_LocalPosition: {x: 0, y: 0.08, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1198481238173559440}
+  - {fileID: 7731939615152876468}
+  m_Father: {fileID: 3532288326173847348}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 55}
 --- !u!1 &3388191053637284620
 GameObject:
   m_ObjectHideFlags: 0
@@ -1765,7 +1756,7 @@ MonoBehaviour:
   m_symmetry: 0
   m_countAsBone: 0
   m_canCountAsBone: 1
-  m_radius: 0.07
+  m_radius: 0.06
   m_angle: 8
   m_round: 0
 --- !u!1 &3608070603332948509
@@ -1792,7 +1783,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3608070603332948509}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.2588191, w: 0.9659258}
+  m_LocalRotation: {x: 0.00000006354456, y: -0.000000005067015, z: 0.258819, w: 0.9659259}
   m_LocalPosition: {x: 0, y: 0.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1826,14 +1817,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3632629273371901792}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.13912463, y: -0.1658023, z: 0.62755096, w: 0.74788624}
-  m_LocalPosition: {x: -0.06, y: -0.02, z: -0.040000003}
+  m_LocalRotation: {x: -0.2800353, y: -0.3165224, z: 0.60053766, w: 0.67878455}
+  m_LocalPosition: {x: -0.06, y: 0.005, z: -0.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8184638533179646297}
   m_Father: {fileID: 7567130247591860503}
-  m_LocalEulerAnglesHint: {x: 0, y: -25, z: 80}
+  m_LocalEulerAnglesHint: {x: 0, y: -50, z: 83}
 --- !u!114 &8539560512772248517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1871,6 +1862,238 @@ MonoBehaviour:
   m_operator: 0
   m_booleanOperatorType: 0
   m_dyeBlendMode: 3
+  m_blend: 0.05
+  m_symmetry: 0
+  m_countAsBone: 1
+  m_canCountAsBone: 1
+  m_radius: 0.08
+  m_angle: 10
+  m_round: 0
+--- !u!1 &3998528188365285976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 710933609808595814}
+  - component: {fileID: 3287998939317869211}
+  - component: {fileID: 4263862423238195312}
+  m_Layer: 0
+  m_Name: R3 Foot Brush
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &710933609808595814
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3998528188365285976}
+  serializedVersion: 2
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0.05, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 79231911085781012}
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
+--- !u!114 &3287998939317869211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3998528188365285976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2390520846a478242a1b2271b4ddd597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MudBun::MudBun.MudMaterial
+  m_sharedMaterial: {fileID: 0}
+  m_color: {r: 0.96862745, g: 0.6392157, b: 0.36078432, a: 1}
+  m_emission: {r: 0, g: 0, b: 0, a: 1}
+  m_metallic: 0
+  m_smoothness: 0.5
+  m_textureIndex: 0
+  m_splatSize: 1
+  m_blendTightness: 0
+  m_contributeMaterial: 1
+--- !u!114 &4263862423238195312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3998528188365285976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73c6499a22a3e0a4098d1b3f96db799a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MudBun::MudBun.MudSolidAngle
+  Hidden: 0
+  m_operator: 0
+  m_booleanOperatorType: 0
+  m_dyeBlendMode: 3
+  m_blend: 0.11
+  m_symmetry: 0
+  m_countAsBone: 0
+  m_canCountAsBone: 1
+  m_radius: 0.03
+  m_angle: 3
+  m_round: 0
+--- !u!1 &4313451724013953052
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1198481238173559440}
+  - component: {fileID: 5756095763913277049}
+  - component: {fileID: 4283844528413074098}
+  m_Layer: 0
+  m_Name: R1 Knee Brush
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1198481238173559440
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4313451724013953052}
+  serializedVersion: 2
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0.06, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4088632512095349966}
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
+--- !u!114 &5756095763913277049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4313451724013953052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2390520846a478242a1b2271b4ddd597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MudBun::MudBun.MudMaterial
+  m_sharedMaterial: {fileID: 0}
+  m_color: {r: 0.8980392, g: 0.3372549, b: 0.23529412, a: 1}
+  m_emission: {r: 0, g: 0, b: 0, a: 1}
+  m_metallic: 0
+  m_smoothness: 0.5
+  m_textureIndex: 0
+  m_splatSize: 1
+  m_blendTightness: 0
+  m_contributeMaterial: 1
+--- !u!114 &4283844528413074098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4313451724013953052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73c6499a22a3e0a4098d1b3f96db799a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MudBun::MudBun.MudSolidAngle
+  Hidden: 0
+  m_operator: 0
+  m_booleanOperatorType: 0
+  m_dyeBlendMode: 3
+  m_blend: 0
+  m_symmetry: 0
+  m_countAsBone: 0
+  m_canCountAsBone: 1
+  m_radius: 0.06
+  m_angle: 8
+  m_round: 0
+--- !u!1 &4463962732381884107
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3532288326173847348}
+  - component: {fileID: 2989810113778790791}
+  - component: {fileID: 2960566047510684027}
+  m_Layer: 0
+  m_Name: R1 Leg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3532288326173847348
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4463962732381884107}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.67351794, y: 0.60643834, z: 0.31406656, w: 0.28278682}
+  m_LocalPosition: {x: 0.06, y: 0.04, z: 0.04}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4088632512095349966}
+  m_Father: {fileID: 7567130247591860503}
+  m_LocalEulerAnglesHint: {x: 0, y: 130, z: 96}
+--- !u!114 &2989810113778790791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4463962732381884107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2390520846a478242a1b2271b4ddd597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MudBun::MudBun.MudMaterial
+  m_sharedMaterial: {fileID: 0}
+  m_color: {r: 0.8980392, g: 0.3372549, b: 0.23529412, a: 1}
+  m_emission: {r: 0, g: 0, b: 0, a: 1}
+  m_metallic: 0
+  m_smoothness: 0.5
+  m_textureIndex: 0
+  m_splatSize: 1
+  m_blendTightness: 0
+  m_contributeMaterial: 1
+--- !u!114 &2960566047510684027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4463962732381884107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73c6499a22a3e0a4098d1b3f96db799a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MudBun::MudBun.MudSolidAngle
+  Hidden: 0
+  m_operator: 0
+  m_booleanOperatorType: 0
+  m_dyeBlendMode: 3
   m_blend: 0.04
   m_symmetry: 0
   m_countAsBone: 1
@@ -1878,71 +2101,6 @@ MonoBehaviour:
   m_radius: 0.08
   m_angle: 10
   m_round: 0
---- !u!1 &3959738004558251296
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6841707548347929485}
-  m_Layer: 0
-  m_Name: R1 Knee
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6841707548347929485
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3959738004558251296}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.2588191, w: 0.9659258}
-  m_LocalPosition: {x: 0, y: 0.08, z: -0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 8813897718110542586}
-  - {fileID: 8043439589287124070}
-  m_Father: {fileID: 4307476501030616441}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 30}
---- !u!1 &4420327493201301043
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2599027810426106714}
-  m_Layer: 0
-  m_Name: R3 Foot
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2599027810426106714
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4420327493201301043}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.2588191, w: 0.9659258}
-  m_LocalPosition: {x: 0, y: 0.06, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 774583545835972687}
-  m_Father: {fileID: 733231236575672145}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 30}
 --- !u!1 &4502804472503006033
 GameObject:
   m_ObjectHideFlags: 0
@@ -1969,13 +2127,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4502804472503006033}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.02, z: 0}
+  m_LocalRotation: {x: -0.043619405, y: 0, z: 0, w: 0.9990483}
+  m_LocalPosition: {x: 0, y: 0.05, z: 0}
   m_LocalScale: {x: 0.18, y: 0.08, z: 0.16000003}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7567130247591860503}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -5, y: 0, z: 0}
 --- !u!114 &19543878029281839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2052,90 +2210,14 @@ Transform:
   - {fileID: 3298291524308145311}
   - {fileID: 2114162834289404310}
   - {fileID: 890614471030752259}
-  - {fileID: 4307476501030616441}
-  - {fileID: 8359305345599062551}
-  - {fileID: 6318431582268612138}
+  - {fileID: 3532288326173847348}
+  - {fileID: 8070850730838707812}
+  - {fileID: 5927071592063311832}
   - {fileID: 7180440081269340791}
+  - {fileID: 3412347780939358062}
+  - {fileID: 933441237764105957}
   m_Father: {fileID: 4416894290285122627}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4688560212410987409
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8359305345599062551}
-  - component: {fileID: 6109495085089942938}
-  - component: {fileID: 7646838224895088119}
-  m_Layer: 0
-  m_Name: R2 Leg
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8359305345599062551
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4688560212410987409}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.6427876, y: 0.7660445, z: -0, w: 0}
-  m_LocalPosition: {x: 0.07, y: -0.02, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7889456645011551473}
-  m_Father: {fileID: 7567130247591860503}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 80}
---- !u!114 &6109495085089942938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4688560212410987409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2390520846a478242a1b2271b4ddd597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: MudBun::MudBun.MudMaterial
-  m_sharedMaterial: {fileID: 0}
-  m_color: {r: 0.8980392, g: 0.3372549, b: 0.23529412, a: 1}
-  m_emission: {r: 0, g: 0, b: 0, a: 1}
-  m_metallic: 0
-  m_smoothness: 0.5
-  m_textureIndex: 0
-  m_splatSize: 1
-  m_blendTightness: 0
-  m_contributeMaterial: 1
---- !u!114 &7646838224895088119
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4688560212410987409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73c6499a22a3e0a4098d1b3f96db799a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: MudBun::MudBun.MudSolidAngle
-  Hidden: 0
-  m_operator: 0
-  m_booleanOperatorType: 0
-  m_dyeBlendMode: 3
-  m_blend: 0.04
-  m_symmetry: 0
-  m_countAsBone: 1
-  m_canCountAsBone: 1
-  m_radius: 0.08
-  m_angle: 10
-  m_round: 0
 --- !u!1 &4945939362079289945
 GameObject:
   m_ObjectHideFlags: 0
@@ -2160,92 +2242,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4945939362079289945}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.2588191, w: 0.9659258}
-  m_LocalPosition: {x: 0, y: 0.08, z: -0}
+  m_LocalRotation: {x: 0, y: 0, z: 0.46174863, w: 0.8870109}
+  m_LocalPosition: {x: 0, y: 0.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8159370408882389142}
   - {fileID: 4193884815610726959}
   m_Father: {fileID: 3298291524308145311}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 30}
---- !u!1 &5016214551106877037
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5634271893794699335}
-  - component: {fileID: 2399306062948068348}
-  - component: {fileID: 4372971813369816803}
-  m_Layer: 0
-  m_Name: R3 Knee Brush
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5634271893794699335
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5016214551106877037}
-  serializedVersion: 2
-  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0.06, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 733231236575672145}
-  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
---- !u!114 &2399306062948068348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5016214551106877037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2390520846a478242a1b2271b4ddd597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: MudBun::MudBun.MudMaterial
-  m_sharedMaterial: {fileID: 0}
-  m_color: {r: 0.8980392, g: 0.3372549, b: 0.23529412, a: 1}
-  m_emission: {r: 0, g: 0, b: 0, a: 1}
-  m_metallic: 0
-  m_smoothness: 0.5
-  m_textureIndex: 0
-  m_splatSize: 1
-  m_blendTightness: 0
-  m_contributeMaterial: 1
---- !u!114 &4372971813369816803
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5016214551106877037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73c6499a22a3e0a4098d1b3f96db799a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: MudBun::MudBun.MudSolidAngle
-  Hidden: 0
-  m_operator: 0
-  m_booleanOperatorType: 0
-  m_dyeBlendMode: 3
-  m_blend: 0
-  m_symmetry: 0
-  m_countAsBone: 0
-  m_canCountAsBone: 1
-  m_radius: 0.07
-  m_angle: 8
-  m_round: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 55}
 --- !u!1 &5030011671954327933
 GameObject:
   m_ObjectHideFlags: 0
@@ -2320,7 +2325,7 @@ MonoBehaviour:
   m_symmetry: 0
   m_countAsBone: 0
   m_canCountAsBone: 1
-  m_radius: 0.07
+  m_radius: 0.04
   m_angle: 3
   m_round: 0
 --- !u!1 &5038953266979738134
@@ -2347,8 +2352,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5038953266979738134}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.2588191, w: 0.9659258}
-  m_LocalPosition: {x: 0, y: 0.06, z: 0}
+  m_LocalRotation: {x: 0.000000019829715, y: -0.000000026309902, z: 0.2588193, w: 0.9659258}
+  m_LocalPosition: {x: -0.000000009313226, y: 0.06, z: 0.000000029192657}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2379,16 +2384,16 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5040458152232067995}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.2588191, w: 0.9659258}
-  m_LocalPosition: {x: 0, y: 0.08, z: -0}
+  m_LocalRotation: {x: 0, y: 0, z: 0.5, w: 0.8660254}
+  m_LocalPosition: {x: 0, y: 0.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7705749978410187519}
   - {fileID: 7173330756275624883}
   m_Father: {fileID: 2114162834289404310}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 30}
---- !u!1 &5085517313613865036
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 60}
+--- !u!1 &5276703094550540777
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2396,31 +2401,32 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8043439589287124070}
+  - component: {fileID: 5224546208210249626}
   m_Layer: 0
-  m_Name: R1 Foot
+  m_Name: R3 Knee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8043439589287124070
+--- !u!4 &5224546208210249626
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5085517313613865036}
+  m_GameObject: {fileID: 5276703094550540777}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.2588191, w: 0.9659258}
-  m_LocalPosition: {x: 0, y: 0.06, z: 0}
+  m_LocalRotation: {x: 0.000000007450579, y: 0.000000014901158, z: 0.3977531, w: 0.91749245}
+  m_LocalPosition: {x: -0.000000077299774, y: 0.08000022, z: 0.00000022538006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7855100388855851781}
-  m_Father: {fileID: 6841707548347929485}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 30}
---- !u!1 &5718600280032347115
+  - {fileID: 7589198544754787802}
+  - {fileID: 79231911085781012}
+  m_Father: {fileID: 5927071592063311832}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 46.876}
+--- !u!1 &5417284477239419398
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2428,7 +2434,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7889456645011551473}
+  - component: {fileID: 2289657258848355406}
   m_Layer: 0
   m_Name: R2 Knee
   m_TagString: Untagged
@@ -2436,23 +2442,102 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7889456645011551473
+--- !u!4 &2289657258848355406
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5718600280032347115}
+  m_GameObject: {fileID: 5417284477239419398}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.2588191, w: 0.9659258}
-  m_LocalPosition: {x: 0, y: 0.08, z: -0}
+  m_LocalRotation: {x: 0, y: 0, z: 0.5, w: 0.8660254}
+  m_LocalPosition: {x: 0, y: 0.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6548597755595032807}
-  - {fileID: 7132444586524913027}
-  m_Father: {fileID: 8359305345599062551}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 30}
+  - {fileID: 5367965267926877581}
+  - {fileID: 989042320080766594}
+  m_Father: {fileID: 8070850730838707812}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 60}
+--- !u!1 &5687280288084353147
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3412347780939358062}
+  - component: {fileID: 1155271903020366190}
+  - component: {fileID: 3560644489657780960}
+  m_Layer: 0
+  m_Name: L Eye
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3412347780939358062
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5687280288084353147}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: 0.9961947, w: -0.08715578}
+  m_LocalPosition: {x: -0.03, y: 0.08, z: 0.06}
+  m_LocalScale: {x: 0.07, y: 0.07, z: 0.07}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 1636784996585888116}
+  - {fileID: 7202319264541813558}
+  m_Father: {fileID: 7567130247591860503}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 190}
+--- !u!114 &1155271903020366190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5687280288084353147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2390520846a478242a1b2271b4ddd597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MudBun::MudBun.MudMaterial
+  m_sharedMaterial: {fileID: 0}
+  m_color: {r: 0.96862745, g: 0.6392157, b: 0.36078432, a: 1}
+  m_emission: {r: 0, g: 0, b: 0, a: 1}
+  m_metallic: 0
+  m_smoothness: 0.5
+  m_textureIndex: 0
+  m_splatSize: 1
+  m_blendTightness: 1
+  m_contributeMaterial: 1
+--- !u!114 &3560644489657780960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5687280288084353147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 348538ad1332d02408f0f622d4092da8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MudBun::MudBun.MudCone
+  Hidden: 0
+  m_operator: 0
+  m_booleanOperatorType: 0
+  m_dyeBlendMode: 3
+  m_blend: 0.02
+  m_symmetry: 0
+  m_countAsBone: 1
+  m_canCountAsBone: 1
+  m_radius: 0
+  m_round: 0.01
+  PivotShift: 1
 --- !u!1 &5771613117565760112
 GameObject:
   m_ObjectHideFlags: 0
@@ -2477,15 +2562,169 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5771613117565760112}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.2588191, w: 0.9659258}
-  m_LocalPosition: {x: 0, y: 0.08, z: -0}
+  m_LocalRotation: {x: 0.000000007450579, y: 0.000000014901158, z: 0.3977531, w: 0.91749245}
+  m_LocalPosition: {x: -0.000000077299774, y: 0.08000022, z: 0.00000022538006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8106742110872643295}
   - {fileID: 3877799963092192068}
   m_Father: {fileID: 890614471030752259}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 30}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 46.876}
+--- !u!1 &6031765568600787452
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7878688149048881346}
+  - component: {fileID: 2232225410659049765}
+  - component: {fileID: 8982925478334765334}
+  m_Layer: 0
+  m_Name: R Eye Tip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7878688149048881346
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6031765568600787452}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
+  m_LocalPosition: {x: 0, y: -0.8, z: 0}
+  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 933441237764105957}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2232225410659049765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6031765568600787452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2390520846a478242a1b2271b4ddd597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MudBun::MudBun.MudMaterial
+  m_sharedMaterial: {fileID: 0}
+  m_color: {r: 0.96862745, g: 0.6392157, b: 0.36078432, a: 1}
+  m_emission: {r: 0, g: 0, b: 0, a: 1}
+  m_metallic: 1
+  m_smoothness: 1
+  m_textureIndex: 0
+  m_splatSize: 1
+  m_blendTightness: 0
+  m_contributeMaterial: 1
+--- !u!114 &8982925478334765334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6031765568600787452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 348538ad1332d02408f0f622d4092da8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MudBun::MudBun.MudCone
+  Hidden: 0
+  m_operator: 0
+  m_booleanOperatorType: 14
+  m_dyeBlendMode: 3
+  m_blend: 0.01
+  m_symmetry: 0
+  m_countAsBone: 1
+  m_canCountAsBone: 1
+  m_radius: 0.001
+  m_round: 0.01
+  PivotShift: -1
+--- !u!1 &6048584289147552758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7202319264541813558}
+  - component: {fileID: 9027834195098749618}
+  - component: {fileID: 922105203714514296}
+  m_Layer: 0
+  m_Name: L Eye Tip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7202319264541813558
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6048584289147552758}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
+  m_LocalPosition: {x: 0, y: -0.8, z: 0}
+  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 3412347780939358062}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9027834195098749618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6048584289147552758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2390520846a478242a1b2271b4ddd597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MudBun::MudBun.MudMaterial
+  m_sharedMaterial: {fileID: 0}
+  m_color: {r: 0.96862745, g: 0.6392157, b: 0.36078432, a: 1}
+  m_emission: {r: 0, g: 0, b: 0, a: 1}
+  m_metallic: 1
+  m_smoothness: 1
+  m_textureIndex: 0
+  m_splatSize: 1
+  m_blendTightness: 0
+  m_contributeMaterial: 1
+--- !u!114 &922105203714514296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6048584289147552758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 348538ad1332d02408f0f622d4092da8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MudBun::MudBun.MudCone
+  Hidden: 0
+  m_operator: 0
+  m_booleanOperatorType: 14
+  m_dyeBlendMode: 3
+  m_blend: 0.01
+  m_symmetry: 0
+  m_countAsBone: 1
+  m_canCountAsBone: 1
+  m_radius: 0.001
+  m_round: 0.01
+  PivotShift: -1
 --- !u!1 &6142363325576793884
 GameObject:
   m_ObjectHideFlags: 0
@@ -2512,13 +2751,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6142363325576793884}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.16, y: 0.08, z: 0.14}
+  m_LocalRotation: {x: 0.043619405, y: 0, z: 0, w: 0.9990483}
+  m_LocalPosition: {x: 0, y: 0.04, z: 0}
+  m_LocalScale: {x: 0.15999998, y: 0.080000006, z: 0.13999999}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7567130247591860503}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 5, y: 0, z: 0}
 --- !u!114 &4600229166243117124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2636,9 +2875,73 @@ MonoBehaviour:
   m_symmetry: 0
   m_countAsBone: 0
   m_canCountAsBone: 1
-  m_radius: 0.07
+  m_radius: 0.06
   m_angle: 8
   m_round: 0
+--- !u!1 &6523136946723671031
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 79231911085781012}
+  m_Layer: 0
+  m_Name: R3 Foot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &79231911085781012
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6523136946723671031}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.000000019829715, y: -0.000000026309902, z: 0.2588193, w: 0.9659258}
+  m_LocalPosition: {x: -0.000000009313226, y: 0.06, z: 0.000000029192657}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 710933609808595814}
+  m_Father: {fileID: 5224546208210249626}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 30}
+--- !u!1 &6850248540048005314
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 989042320080766594}
+  m_Layer: 0
+  m_Name: R2 Foot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &989042320080766594
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6850248540048005314}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: 0.25881907, w: 0.9659259}
+  m_LocalPosition: {x: 0.000000026077032, y: 0.06000007, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4262250218191357453}
+  m_Father: {fileID: 2289657258848355406}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 30}
 --- !u!1 &7406416280656366437
 GameObject:
   m_ObjectHideFlags: 0
@@ -2665,14 +2968,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7406416280656366437}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.6427876, w: 0.7660445}
-  m_LocalPosition: {x: -0.07, y: -0.02, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0.66261995, w: 0.7489558}
+  m_LocalPosition: {x: -0.07, y: 0.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 851555433967332506}
   m_Father: {fileID: 7567130247591860503}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 80}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 83}
 --- !u!114 &6831085591504348920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2717,6 +3020,317 @@ MonoBehaviour:
   m_radius: 0.08
   m_angle: 10
   m_round: 0
+--- !u!1 &7558284409152840535
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5367965267926877581}
+  - component: {fileID: 4186553990041131939}
+  - component: {fileID: 943657369193886115}
+  m_Layer: 0
+  m_Name: R2 Knee Brush
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5367965267926877581
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7558284409152840535}
+  serializedVersion: 2
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0.06, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2289657258848355406}
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
+--- !u!114 &4186553990041131939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7558284409152840535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2390520846a478242a1b2271b4ddd597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MudBun::MudBun.MudMaterial
+  m_sharedMaterial: {fileID: 0}
+  m_color: {r: 0.8980392, g: 0.3372549, b: 0.23529412, a: 1}
+  m_emission: {r: 0, g: 0, b: 0, a: 1}
+  m_metallic: 0
+  m_smoothness: 0.5
+  m_textureIndex: 0
+  m_splatSize: 1
+  m_blendTightness: 0
+  m_contributeMaterial: 1
+--- !u!114 &943657369193886115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7558284409152840535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73c6499a22a3e0a4098d1b3f96db799a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MudBun::MudBun.MudSolidAngle
+  Hidden: 0
+  m_operator: 0
+  m_booleanOperatorType: 0
+  m_dyeBlendMode: 3
+  m_blend: 0
+  m_symmetry: 0
+  m_countAsBone: 0
+  m_canCountAsBone: 1
+  m_radius: 0.06
+  m_angle: 8
+  m_round: 0
+--- !u!1 &7617603547946394167
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7589198544754787802}
+  - component: {fileID: 3364786683523110994}
+  - component: {fileID: 3461133220043014685}
+  m_Layer: 0
+  m_Name: R3 Knee Brush
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7589198544754787802
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7617603547946394167}
+  serializedVersion: 2
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0.06, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5224546208210249626}
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
+--- !u!114 &3364786683523110994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7617603547946394167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2390520846a478242a1b2271b4ddd597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MudBun::MudBun.MudMaterial
+  m_sharedMaterial: {fileID: 0}
+  m_color: {r: 0.8980392, g: 0.3372549, b: 0.23529412, a: 1}
+  m_emission: {r: 0, g: 0, b: 0, a: 1}
+  m_metallic: 0
+  m_smoothness: 0.5
+  m_textureIndex: 0
+  m_splatSize: 1
+  m_blendTightness: 0
+  m_contributeMaterial: 1
+--- !u!114 &3461133220043014685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7617603547946394167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73c6499a22a3e0a4098d1b3f96db799a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MudBun::MudBun.MudSolidAngle
+  Hidden: 0
+  m_operator: 0
+  m_booleanOperatorType: 0
+  m_dyeBlendMode: 3
+  m_blend: 0
+  m_symmetry: 0
+  m_countAsBone: 0
+  m_canCountAsBone: 1
+  m_radius: 0.06
+  m_angle: 8
+  m_round: 0
+--- !u!1 &7853603120023666703
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5927071592063311832}
+  - component: {fileID: 4868632129356841509}
+  - component: {fileID: 4559074402283953900}
+  m_Layer: 0
+  m_Name: R3 Leg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5927071592063311832
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7853603120023666703}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.60053766, y: -0.67878455, z: 0.2800353, w: 0.3165224}
+  m_LocalPosition: {x: 0.06, y: 0.005, z: -0.04}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5224546208210249626}
+  m_Father: {fileID: 7567130247591860503}
+  m_LocalEulerAnglesHint: {x: 0, y: -130, z: 83}
+--- !u!114 &4868632129356841509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7853603120023666703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2390520846a478242a1b2271b4ddd597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MudBun::MudBun.MudMaterial
+  m_sharedMaterial: {fileID: 0}
+  m_color: {r: 0.8980392, g: 0.3372549, b: 0.23529412, a: 1}
+  m_emission: {r: 0, g: 0, b: 0, a: 1}
+  m_metallic: 0
+  m_smoothness: 0.5
+  m_textureIndex: 0
+  m_splatSize: 1
+  m_blendTightness: 0
+  m_contributeMaterial: 1
+--- !u!114 &4559074402283953900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7853603120023666703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73c6499a22a3e0a4098d1b3f96db799a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MudBun::MudBun.MudSolidAngle
+  Hidden: 0
+  m_operator: 0
+  m_booleanOperatorType: 0
+  m_dyeBlendMode: 3
+  m_blend: 0.05
+  m_symmetry: 0
+  m_countAsBone: 1
+  m_canCountAsBone: 1
+  m_radius: 0.08
+  m_angle: 10
+  m_round: 0
+--- !u!1 &8090843798629582276
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 933441237764105957}
+  - component: {fileID: 19791191024023826}
+  - component: {fileID: 1408777605563429150}
+  m_Layer: 0
+  m_Name: R Eye
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &933441237764105957
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8090843798629582276}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: 0.9961947, w: 0.08715588}
+  m_LocalPosition: {x: 0.03, y: 0.08, z: 0.06}
+  m_LocalScale: {x: 0.07000001, y: 0.07000001, z: 0.07}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 7329585252019655902}
+  - {fileID: 7878688149048881346}
+  m_Father: {fileID: 7567130247591860503}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 170}
+--- !u!114 &19791191024023826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8090843798629582276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2390520846a478242a1b2271b4ddd597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MudBun::MudBun.MudMaterial
+  m_sharedMaterial: {fileID: 0}
+  m_color: {r: 0.96862745, g: 0.6392157, b: 0.36078432, a: 1}
+  m_emission: {r: 0, g: 0, b: 0, a: 1}
+  m_metallic: 0
+  m_smoothness: 0.5
+  m_textureIndex: 0
+  m_splatSize: 1
+  m_blendTightness: 1
+  m_contributeMaterial: 1
+--- !u!114 &1408777605563429150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8090843798629582276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 348538ad1332d02408f0f622d4092da8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MudBun::MudBun.MudCone
+  Hidden: 0
+  m_operator: 0
+  m_booleanOperatorType: 0
+  m_dyeBlendMode: 3
+  m_blend: 0.02
+  m_symmetry: 0
+  m_countAsBone: 1
+  m_canCountAsBone: 1
+  m_radius: 0
+  m_round: 0.01
+  PivotShift: 1
 --- !u!1 &8381148715318440292
 GameObject:
   m_ObjectHideFlags: 0
@@ -2744,7 +3358,7 @@ Transform:
   m_GameObject: {fileID: 8381148715318440292}
   serializedVersion: 2
   m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0.06, z: 0}
+  m_LocalPosition: {x: 0, y: 0.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2791,7 +3405,7 @@ MonoBehaviour:
   m_symmetry: 0
   m_countAsBone: 0
   m_canCountAsBone: 1
-  m_radius: 0.07
+  m_radius: 0.03
   m_angle: 3
   m_round: 0
 --- !u!1 &8451918539627062292
@@ -2820,14 +3434,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8451918539627062292}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.13912469, y: 0.16580237, z: 0.62755096, w: 0.74788624}
-  m_LocalPosition: {x: -0.06, y: -0.02, z: 0.040000003}
+  m_LocalRotation: {x: 0.31406656, y: 0.28278682, z: 0.67351794, w: 0.60643834}
+  m_LocalPosition: {x: -0.06, y: 0.04, z: 0.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6192019486111124541}
   m_Father: {fileID: 7567130247591860503}
-  m_LocalEulerAnglesHint: {x: 0, y: 25, z: 80}
+  m_LocalEulerAnglesHint: {x: 0, y: 50, z: 96}
 --- !u!114 &4363710459984999114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2896,88 +3510,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8895679327615529179}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.2588191, w: 0.9659258}
-  m_LocalPosition: {x: 0, y: 0.06, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.25881907, w: 0.9659259}
+  m_LocalPosition: {x: 0.000000026077032, y: 0.06000007, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3401220694551673509}
   m_Father: {fileID: 851555433967332506}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 30}
---- !u!1 &8970735410660373317
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 643076827364170716}
-  - component: {fileID: 3242801918618015255}
-  - component: {fileID: 1835253643805971711}
-  m_Layer: 0
-  m_Name: R2 Foot Brush
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &643076827364170716
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8970735410660373317}
-  serializedVersion: 2
-  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0.06, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7132444586524913027}
-  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
---- !u!114 &3242801918618015255
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8970735410660373317}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2390520846a478242a1b2271b4ddd597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: MudBun::MudBun.MudMaterial
-  m_sharedMaterial: {fileID: 0}
-  m_color: {r: 0.96862745, g: 0.6392157, b: 0.36078432, a: 1}
-  m_emission: {r: 0, g: 0, b: 0, a: 1}
-  m_metallic: 0
-  m_smoothness: 0.5
-  m_textureIndex: 0
-  m_splatSize: 1
-  m_blendTightness: 0
-  m_contributeMaterial: 1
---- !u!114 &1835253643805971711
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8970735410660373317}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73c6499a22a3e0a4098d1b3f96db799a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: MudBun::MudBun.MudSolidAngle
-  Hidden: 0
-  m_operator: 0
-  m_booleanOperatorType: 0
-  m_dyeBlendMode: 3
-  m_blend: 0.11
-  m_symmetry: 0
-  m_countAsBone: 0
-  m_canCountAsBone: 1
-  m_radius: 0.07
-  m_angle: 3
-  m_round: 0

@@ -1,0 +1,16 @@
+{
+    "SdkRoot": "Packages/com.photonengine.quantum",
+    "AssetSearchPaths": [
+        "Assets"
+    ],
+    "NewAssetsLocation": "Assets/QuantumUser/Resources",
+    "AutoBuildOnSceneSave": 96,
+    "AutoBuildOnPlaymodeChanged": 96,
+    "AutoBuildOnBuild": 96,
+    "AssetGuidOverrides": [],
+    "UseQuantumUnityDBAssetPostprocessor": true,
+    "UseQuantumToolbarUtilities": false,
+    "QuantumToolbarZone": 0,
+    "UsePhotonAppVersionsPostprocessor": true,
+    "EntityComponentInspectorMode": 2
+}
