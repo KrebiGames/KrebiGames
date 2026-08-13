@@ -19,7 +19,7 @@ MonoBehaviour:
   KinematicSpeed:
     RawValue: 131072
   JumpMultiplier:
-    RawValue: 65536
+    RawValue: 196608
   Gravity:
     X:
       RawValue: 0
