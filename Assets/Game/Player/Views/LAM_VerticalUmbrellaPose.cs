@@ -1,3 +1,4 @@
+using Quantum;
 using System;
 using System.Collections.Generic;
 
@@ -11,35 +12,35 @@ using static FIMSpace.FProceduralAnimation.LegsAnimator;
 namespace FIMSpace.FProceduralAnimation {
 
 	[CreateAssetMenu(fileName = "LAM_VerticalUmbrellaPose", menuName = "FImpossible Creations/Legs Animator/Module - Vertical Umbrella Pose", order = 10)]
-	public class LAM_VerticalUmbrellaPose : LegsAnimatorControlModuleBase {
+	public unsafe class LAM_VerticalUmbrellaPose : LegsAnimatorControlModuleBase {
 
 		[Header("Motion")]
-		[SerializeField] private float maxVerticalSpeed = 5f;
-		[SerializeField] private float maxHorizontalSpeed = 5f;
-		[SerializeField] private float deadZone = 0.1f;
-		[SerializeField] private float smoothing = 15f;
+		[SerializeField] float deadZone = 0.1f;
+		[SerializeField] float smoothing = 15f;
 
 		[Header("Going Up")]
-		[SerializeField] private float upSpread = 0.35f;
-		[SerializeField] private float upVerticalOffset = 0.15f;
-		[SerializeField] private float upWindStrength = 0.04f;
-		[SerializeField] private float upLateralTrail = 0.3f;
+		[SerializeField] float upSpread = 0.35f;
+		[SerializeField] float upVerticalOffset = 0.15f;
+		[SerializeField] float upWindStrength = 0.04f;
+		[SerializeField] float upLateralTrail = 0.3f;
 
 		[Header("Going Down")]
-		[SerializeField] private float downContract = 0.2f;
-		[SerializeField] private float downWindStrength = 0.05f;
+		[SerializeField] float downContract = 0.2f;
+		[SerializeField] float downWindStrength = 0.05f;
 
 		[Header("Wind")]
-		[SerializeField] private float windFrequency = 3f;
-		[SerializeField] private float windPhase = 0.8f;
+		[SerializeField] float windFrequency = 3f;
+		[SerializeField] float windPhase = 0.8f;
 
 		[Header("Landing")]
-		[SerializeField] private LayerMask groundMask = ~0;
-		[SerializeField] private float landingResetDistance = 1.5f;
-		[SerializeField] private float standingGroundDistance = 0.3f;
-		[SerializeField] private float groundRayStartOffset = 0.5f;
+		[SerializeField] UnityEngine.LayerMask groundMask = ~0;
+		[SerializeField] float landingResetDistance = 1.5f;
+		[SerializeField] float standingGroundDistance = 0.3f;
+		[SerializeField] float groundRayStartOffset = 0.5f;
 
 		[NonSerialized] LegsAnimator.Leg[] legs;
+		float maxSpeed = 5f;
+		float maxJumpSpeed = 5f;
 		float smoothedVerticalVelocity;
 		Vector3 smoothedHorizontalVelocity;
 
@@ -52,6 +53,25 @@ namespace FIMSpace.FProceduralAnimation {
 		}
 
 		public override void OnInit(LegsAnimatorCustomModuleHelper helper) {
+			var playerView = LA.GetComponentInParent<PlayerViewController>();
+			if (playerView == null || playerView.EntityView == null)
+				return;
+
+			Frame frame = QuantumRunner.Default.Game.Frames.Predicted;
+			if (!frame.TryGet<KCC>(playerView.EntityView.EntityRef, out var kcc))
+				return;
+
+			KCCSettings settings = frame.FindAsset(kcc.Settings);
+			foreach (var processorRef in settings.Processors) {
+				KCCProcessor processor = frame.FindAsset(processorRef);
+
+				if (processor is EnvironmentProcessor env) {
+					maxJumpSpeed = env.JumpMultiplier.AsFloat;
+					maxSpeed = env.KinematicSpeed.AsFloat;
+					break;
+				}
+			}
+
 			smoothedVerticalVelocity = 0f;
 			smoothedHorizontalVelocity = Vector3.zero;
 			List<LegsAnimator.Leg> selectedLegs = new List<LegsAnimator.Leg>();
@@ -106,8 +126,8 @@ namespace FIMSpace.FProceduralAnimation {
 			if (Mathf.Abs(smoothedVerticalVelocity) < settings.deadZone)
 				smoothedVerticalVelocity = 0f;
 
-			float vertical01 = Mathf.Clamp(smoothedVerticalVelocity / Mathf.Max(0.01f, settings.maxVerticalSpeed), -1f, 1f);
-			float horizontal01 = Mathf.Clamp01(smoothedHorizontalVelocity.magnitude / Mathf.Max(0.01f, settings.maxHorizontalSpeed));
+			float vertical01 = Mathf.Clamp(smoothedVerticalVelocity / Mathf.Max(0.01f, settings.maxJumpSpeed), -1f, 1f);
+			float horizontal01 = Mathf.Clamp01(smoothedHorizontalVelocity.magnitude / Mathf.Max(0.01f, settings.maxSpeed));
 			float spreadMultiplier = 1f;
 			float yOffset = 0f;
 			float upAmount = 0f;

@@ -16,7 +16,6 @@ public class CrabBodyAnimationView : QuantumEntityViewComponent {
 
 	[Header("Movement")]
 	[SerializeField] private float moveThreshold = 0.05f;
-	[SerializeField] private float maxSpeed = 5f;
 	[SerializeField] private float velocitySmooth = 20f;
 
 	[Header("Body Height")]
@@ -37,6 +36,7 @@ public class CrabBodyAnimationView : QuantumEntityViewComponent {
 	[SerializeField] private float landingMinImpactSpeed = 1f;
 	[SerializeField] private float landingMaxImpactSpeed = 5f;
 
+	float maxSpeed;
 	float currentBodyPitch;
 	float currentBodyHeight;
 	float verticalVelocity;
@@ -52,6 +52,20 @@ public class CrabBodyAnimationView : QuantumEntityViewComponent {
 	Vector3 smoothedVelocity;
 
 	private void Awake() => legsAnimator = root.GetComponentInChildren<LegsAnimator>();
+
+	public override void OnActivate(Frame frame) {
+		if (!frame.TryGet<KCC>(EntityRef, out var kcc))
+			return;
+
+		KCCSettings settings = frame.FindAsset(kcc.Settings);
+		foreach (var processorRef in settings.Processors) {
+			KCCProcessor processor = frame.FindAsset(processorRef);
+			if (processor is EnvironmentProcessor env) {
+				maxSpeed = env.KinematicSpeed.AsFloat;
+				break;
+			}
+		}
+	}
 
 	public override void OnUpdateView() {
 		var frame = usePredictedFrame ? PredictedFrame : VerifiedFrame;

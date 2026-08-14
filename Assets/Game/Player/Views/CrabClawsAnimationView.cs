@@ -21,7 +21,6 @@ public class CrabClawsAnimationView : QuantumEntityViewComponent {
 	[SerializeField] private float oppositePhase = 0.5f;
 
 	[Header("Jump")]
-	[SerializeField] private float maxJumpSpeed = 5f;
 	[SerializeField] private float maxJumpPositionOffset = 0.3f;
 	[SerializeField] private float maxJumpRotation = 60f;
 	[SerializeField] private float jumpSpreadPosition = 0.03f;
@@ -29,21 +28,36 @@ public class CrabClawsAnimationView : QuantumEntityViewComponent {
 	[SerializeField] private float jumpSmooth = 8f;
 	[SerializeField] private float landingSmooth = 25f;
 
-	private Vector3 leftBasePosition;
-	private Vector3 rightBasePosition;
-	private Quaternion leftBaseRotation;
-	private Quaternion rightBaseRotation;
-	private float idleTime;
-	private float idleBlend;
-	private float leftJump;
-	private float rightJump;
-	private float airborneBlend;
+	float maxJumpSpeed = 5f;
+	Vector3 leftBasePosition;
+	Vector3 rightBasePosition;
+	Quaternion leftBaseRotation;
+	Quaternion rightBaseRotation;
+	float idleTime;
+	float idleBlend;
+	float leftJump;
+	float rightJump;
+	float airborneBlend;
 
 	private void Awake() {
 		leftBasePosition = leftClawTarget.localPosition;
 		rightBasePosition = rightClawTarget.localPosition;
 		leftBaseRotation = leftClawTarget.localRotation;
 		rightBaseRotation = rightClawTarget.localRotation;
+	}
+
+	public override void OnActivate(Frame frame) {
+		if (!frame.TryGet<KCC>(EntityRef, out var kcc))
+			return;
+
+		KCCSettings settings = frame.FindAsset(kcc.Settings);
+		foreach (var processorRef in settings.Processors) {
+			KCCProcessor processor = frame.FindAsset(processorRef);
+			if (processor is EnvironmentProcessor env) {
+				maxJumpSpeed = env.JumpMultiplier.AsFloat;
+				break;
+			}
+		}
 	}
 
 	public override void OnUpdateView() {
