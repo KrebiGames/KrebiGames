@@ -1762,6 +1762,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 506928541793919104, guid: 9633c0dc6f5fc1f47aab20da16b597e4, type: 3}
       insertIndex: -1
       addedObject: {fileID: -8440114504602514860}
+    - targetCorrespondingSourceObject: {fileID: 506928541793919104, guid: 9633c0dc6f5fc1f47aab20da16b597e4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6319469408482069713}
   m_SourcePrefab: {fileID: 100100000, guid: 9633c0dc6f5fc1f47aab20da16b597e4, type: 3}
 --- !u!1 &1857731284092253064 stripped
 GameObject:
@@ -1869,6 +1872,36 @@ MonoBehaviour:
       RawValue: 5570560
     RotationSpeed:
       RawValue: 35389440
+--- !u!114 &6319469408482069713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857731284092253064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d57890fd163731428a509cc8cc58b86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Player::CrabClawsAnimationView
+  usePredictedFrame: 1
+  leftClawTarget: {fileID: 8776466431561774641}
+  rightClawTarget: {fileID: 4217641084893849345}
+  bodyTuckPosition: 0.02
+  bodyTuckRotation: 1
+  moveThreshold: 1
+  idleSpeed: 0.5
+  idleSmooth: 5
+  idlePositionAmount: {x: 0.005, y: 0.003, z: 0.001}
+  idleRotationAmount: {x: 2, y: 2, z: 3}
+  oppositePhase: 0.5
+  maxJumpSpeed: 5
+  maxJumpPositionOffset: 0.3
+  maxJumpRotation: 60
+  jumpSpreadPosition: 0.1
+  jumpVariation: 0.3
+  jumpSmooth: 8
+  landingSmooth: 25
 --- !u!4 &4065188574126495999 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2784763235198929911, guid: 9633c0dc6f5fc1f47aab20da16b597e4, type: 3}
@@ -2691,6 +2724,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7567130247591860503, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
   m_PrefabInstance: {fileID: 6394972123163307690}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &4217641084893849345 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7077287499862395307, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+  m_PrefabInstance: {fileID: 6394972123163307690}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6985848591955541263 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4056961561816765349, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
@@ -2699,5 +2737,10 @@ Transform:
 --- !u!4 &7346625221933791977 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4416894290285122627, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+  m_PrefabInstance: {fileID: 6394972123163307690}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8776466431561774641 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2410486811409094811, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
   m_PrefabInstance: {fileID: 6394972123163307690}
   m_PrefabAsset: {fileID: 0}

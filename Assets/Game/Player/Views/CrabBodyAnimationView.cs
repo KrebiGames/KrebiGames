@@ -3,7 +3,7 @@ using Quantum;
 using Photon.Deterministic;
 using FIMSpace.FProceduralAnimation;
 
-public class CrabAnimationView : QuantumEntityViewComponent {
+public class CrabBodyAnimationView : QuantumEntityViewComponent {
 
 	[Header("View")]
 	[SerializeField] private Transform root;
