@@ -1005,7 +1005,7 @@ MonoBehaviour:
   CustomModules:
   - Enabled: 1
     Parent: {fileID: 1744640763137718166}
-    ModuleReference: {fileID: 0}
+    ModuleReference: {fileID: 11400000, guid: af7d3f0acda54be4db4f7eea3686895f, type: 2}
     customStringList: []
     customObjectList: []
     variables: []
@@ -1548,7 +1548,7 @@ MonoBehaviour:
   AnimationFloorLevel: 0.001
   _Editor_Foldout_Setup_LegsList: 1
   _Editor_EnsureCount: 0
-  _Editor_OnValidateTrigger: 1
+  _Editor_OnValidateTrigger: 0
   _EditorAllowAutoUpdateFeetParams: 1
   _EditorCategory: 1
   _EditorSetupCategory: 2
