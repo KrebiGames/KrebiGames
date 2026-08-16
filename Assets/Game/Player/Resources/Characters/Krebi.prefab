@@ -287,6 +287,22 @@ MonoBehaviour:
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
     m_Visible: 1
+  - m_Transform: {fileID: 2410486811409094811}
+    m_Style:
+      shape: {fileID: 4300000, guid: 687b70eb9c49243639f9379f6965034f, type: 2}
+      color: {r: 1, g: 0, b: 0, a: 0.5}
+      size: 0.01
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0}
+    m_Visible: 1
+  - m_Transform: {fileID: 3695090554048333563}
+    m_Style:
+      shape: {fileID: 4300000, guid: e050c2b16fe384bd994474655a4b4968, type: 2}
+      color: {r: 1, g: 0, b: 0, a: 0.5}
+      size: 0.01
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0}
+    m_Visible: 1
 --- !u!1 &554646431991613242
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,7 +436,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 678600160946830209}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.17364825, w: 0.9848078}
+  m_LocalRotation: {x: 0, y: 0, z: -0.258819, w: 0.9659259}
   m_LocalPosition: {x: 0, y: 0.10000001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -428,7 +444,7 @@ Transform:
   - {fileID: 1326866180880127226}
   - {fileID: 4457817719964384304}
   m_Father: {fileID: 3469076870960890130}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -20}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -30}
 --- !u!1 &693396997776244219
 GameObject:
   m_ObjectHideFlags: 0
@@ -1550,8 +1566,8 @@ MonoBehaviour:
   _Editor_EnsureCount: 0
   _Editor_OnValidateTrigger: 0
   _EditorAllowAutoUpdateFeetParams: 1
-  _EditorCategory: 1
-  _EditorSetupCategory: 2
+  _EditorCategory: 0
+  _EditorSetupCategory: 0
   _EditorMotionCategory: 3
   _EditorExtraCategory: 2
   setupPose:
@@ -2639,6 +2655,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7077287499862395307}
+  - component: {fileID: 5061032188846002003}
   m_Layer: 0
   m_Name: R Claw IK Target
   m_TagString: Untagged
@@ -2661,6 +2678,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7541281746321604633}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1773428102 &5061032188846002003
+ParentConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3113868878836684807}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Weight: 1
+  m_TranslationAtRest: {x: 0.12164354, y: -0.009999998, z: 0.23508523}
+  m_RotationAtRest: {x: 90, y: 0, z: 20.000021}
+  m_TranslationOffsets:
+  - {x: 0, y: 0, z: 0}
+  m_RotationOffsets:
+  - {x: 0, y: 0, z: 0}
+  m_AffectTranslationX: 1
+  m_AffectTranslationY: 1
+  m_AffectTranslationZ: 1
+  m_AffectRotationX: 1
+  m_AffectRotationY: 1
+  m_AffectRotationZ: 1
+  m_Active: 1
+  m_IsLocked: 0
+  m_Sources:
+  - sourceTransform: {fileID: 0}
+    weight: 1
 --- !u!1 &3277726513354501109
 GameObject:
   m_ObjectHideFlags: 0
@@ -2757,18 +2801,18 @@ MonoBehaviour:
   m_noiseTwist: 0
   m_noiseTwistOffset: 0
   m_basis:
-    e00: 0.17364824
-    e01: -0.0000004371215
-    e02: 0.9848078
-    e03: -0.11122466
-    e10: -1.4210855e-14
+    e00: 0.3420201
+    e01: 0.00000004785481
+    e02: 0.9396927
+    e03: -0.10112235
+    e10: 1.7763568e-15
     e11: -1
-    e12: -0.00000044386482
+    e12: 0.000000050926033
     e13: 0.060000002
-    e20: 0.9848078
-    e21: 0.00000007707635
-    e22: -0.17364836
-    e23: 0.29417372
+    e20: 0.9396927
+    e21: -0.000000017417728
+    e22: -0.34202015
+    e23: 0.2914668
     e30: 0
     e31: 0
     e32: 0
@@ -2890,6 +2934,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2410486811409094811}
+  - component: {fileID: 4656815444856650019}
   m_Layer: 0
   m_Name: L Claw IK Target
   m_TagString: Untagged
@@ -2905,13 +2950,40 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4010187225562513829}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.70441604, y: 0.06162847, z: -0.06162847, w: 0.70441604}
+  m_LocalRotation: {x: 0.6963643, y: 0.12278779, z: -0.12278779, w: 0.6963643}
   m_LocalPosition: {x: -0.121643566, y: -0.009999998, z: 0.23508525}
   m_LocalScale: {x: 0.10000001, y: 0.1, z: 0.10000001}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 218037736206186388}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1773428102 &4656815444856650019
+ParentConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4010187225562513829}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Weight: 1
+  m_TranslationAtRest: {x: -0.121643566, y: -0.009999998, z: 0.23508525}
+  m_RotationAtRest: {x: 90, y: 0, z: -19.999994}
+  m_TranslationOffsets:
+  - {x: 0, y: 0, z: 0}
+  m_RotationOffsets:
+  - {x: 0, y: 0, z: 0}
+  m_AffectTranslationX: 1
+  m_AffectTranslationY: 1
+  m_AffectTranslationZ: 1
+  m_AffectRotationX: 1
+  m_AffectRotationY: 1
+  m_AffectRotationZ: 1
+  m_Active: 1
+  m_IsLocked: 0
+  m_Sources:
+  - sourceTransform: {fileID: 0}
+    weight: 1
 --- !u!1 &4502804472503006033
 GameObject:
   m_ObjectHideFlags: 0
@@ -3830,18 +3902,18 @@ MonoBehaviour:
   m_noiseTwist: 0
   m_noiseTwistOffset: 0
   m_basis:
-    e00: 0.14201087
-    e01: -0.09993327
-    e02: -0.9848077
-    e03: -0.11431834
-    e10: 0.57549274
-    e11: 0.8178069
-    e12: 0.00000014901161
+    e00: 0.27970606
+    e01: -0.19683035
+    e02: -0.93969274
+    e03: -0.10721572
+    e10: 0.5754927
+    e11: 0.81780696
+    e12: -0.00000047683716
     e13: 0.0947592
-    e20: 0.8053826
-    e21: -0.5667497
-    e22: 0.17364836
-    e23: 0.27662855
+    e20: 0.76848733
+    e21: -0.54078615
+    e22: 0.34201998
+    e23: 0.2747254
     e30: 0
     e31: 0
     e32: 0

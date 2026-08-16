@@ -6,9 +6,10 @@ using FIMSpace.FProceduralAnimation;
 public class CrabBodyAnimationView : QuantumEntityViewComponent {
 
 	[Header("View")]
+	[SerializeField] private bool usePredictedFrame = true;
 	[SerializeField] private Transform root;
 	[SerializeField] private Transform shell;
-	[SerializeField] private bool usePredictedFrame = true;
+	[SerializeField] GameObject[] claws;
 
 	[Header("Step Size")]
 	[SerializeField] private float minGlueRange = 0.15f;
@@ -52,6 +53,12 @@ public class CrabBodyAnimationView : QuantumEntityViewComponent {
 	Vector3 smoothedVelocity;
 
 	private void Awake() => legsAnimator = root.GetComponentInChildren<LegsAnimator>();
+
+	private void Start() {
+		foreach (GameObject claw in claws)
+			if (claw != null)
+				claw.transform.SetParent(null, true);
+	}
 
 	public override void OnActivate(Frame frame) {
 		if (!frame.TryGet<KCC>(EntityRef, out var kcc))
