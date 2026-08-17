@@ -1564,7 +1564,7 @@ MonoBehaviour:
   AnimationFloorLevel: 0.001
   _Editor_Foldout_Setup_LegsList: 1
   _Editor_EnsureCount: 0
-  _Editor_OnValidateTrigger: 0
+  _Editor_OnValidateTrigger: 1
   _EditorAllowAutoUpdateFeetParams: 1
   _EditorCategory: 0
   _EditorSetupCategory: 0
@@ -2655,7 +2655,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7077287499862395307}
-  - component: {fileID: 5061032188846002003}
   m_Layer: 0
   m_Name: R Claw IK Target
   m_TagString: Untagged
@@ -2678,33 +2677,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7541281746321604633}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1773428102 &5061032188846002003
-ParentConstraint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3113868878836684807}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Weight: 1
-  m_TranslationAtRest: {x: 0.12164354, y: -0.009999998, z: 0.23508523}
-  m_RotationAtRest: {x: 90, y: 0, z: 20.000021}
-  m_TranslationOffsets:
-  - {x: 0, y: 0, z: 0}
-  m_RotationOffsets:
-  - {x: 0, y: 0, z: 0}
-  m_AffectTranslationX: 1
-  m_AffectTranslationY: 1
-  m_AffectTranslationZ: 1
-  m_AffectRotationX: 1
-  m_AffectRotationY: 1
-  m_AffectRotationZ: 1
-  m_Active: 1
-  m_IsLocked: 0
-  m_Sources:
-  - sourceTransform: {fileID: 0}
-    weight: 1
 --- !u!1 &3277726513354501109
 GameObject:
   m_ObjectHideFlags: 0
@@ -2801,18 +2773,18 @@ MonoBehaviour:
   m_noiseTwist: 0
   m_noiseTwistOffset: 0
   m_basis:
-    e00: 0.3420201
-    e01: 0.00000004785481
-    e02: 0.9396927
-    e03: -0.10112235
-    e10: 1.7763568e-15
+    e00: 0.34201872
+    e01: 0.00001740843
+    e02: 0.93969315
+    e03: -60.541115
+    e10: 9.094947e-13
     e11: -1
-    e12: 0.000000050926033
-    e13: 0.060000002
-    e20: 0.9396927
-    e21: -0.000000017417728
-    e22: -0.34202015
-    e23: 0.2914668
+    e12: 0.000018525654
+    e13: 12.305881
+    e20: 0.93969315
+    e21: -0.0000063361213
+    e22: -0.34201884
+    e23: -65.988525
     e30: 0
     e31: 0
     e32: 0
@@ -2934,7 +2906,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2410486811409094811}
-  - component: {fileID: 4656815444856650019}
   m_Layer: 0
   m_Name: L Claw IK Target
   m_TagString: Untagged
@@ -2957,33 +2928,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 218037736206186388}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1773428102 &4656815444856650019
-ParentConstraint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4010187225562513829}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Weight: 1
-  m_TranslationAtRest: {x: -0.121643566, y: -0.009999998, z: 0.23508525}
-  m_RotationAtRest: {x: 90, y: 0, z: -19.999994}
-  m_TranslationOffsets:
-  - {x: 0, y: 0, z: 0}
-  m_RotationOffsets:
-  - {x: 0, y: 0, z: 0}
-  m_AffectTranslationX: 1
-  m_AffectTranslationY: 1
-  m_AffectTranslationZ: 1
-  m_AffectRotationX: 1
-  m_AffectRotationY: 1
-  m_AffectRotationZ: 1
-  m_Active: 1
-  m_IsLocked: 0
-  m_Sources:
-  - sourceTransform: {fileID: 0}
-    weight: 1
 --- !u!1 &4502804472503006033
 GameObject:
   m_ObjectHideFlags: 0
@@ -3902,18 +3846,18 @@ MonoBehaviour:
   m_noiseTwist: 0
   m_noiseTwistOffset: 0
   m_basis:
-    e00: 0.27970606
-    e01: -0.19683035
-    e02: -0.93969274
-    e03: -0.10721572
-    e10: 0.5754927
-    e11: 0.81780696
-    e12: -0.00000047683716
-    e13: 0.0947592
-    e20: 0.76848733
-    e21: -0.54078615
-    e22: 0.34201998
-    e23: 0.2747254
+    e00: 0.2797436
+    e01: -0.19686905
+    e02: -0.9396734
+    e03: -60.547207
+    e10: 0.5754914
+    e11: 0.8178078
+    e12: -0.00001168251
+    e13: 12.340639
+    e20: 0.7684746
+    e21: -0.5407707
+    e22: 0.34207296
+    e23: -66.00528
     e30: 0
     e31: 0
     e32: 0
@@ -4874,18 +4818,18 @@ MonoBehaviour:
   m_noiseTwist: 0
   m_noiseTwistOffset: 0
   m_basis:
-    e00: -0.34202063
-    e01: -0.00000021691744
-    e02: 0.9396925
-    e03: 0.10112232
-    e10: 0
+    e00: -0.34201884
+    e01: -0.00001740843
+    e02: 0.93969315
+    e03: -60.338867
+    e10: 9.094947e-13
     e11: -1
-    e12: -0.00000023083876
-    e13: 0.060000002
-    e20: 0.9396925
-    e21: -0.000000078951594
-    e22: 0.3420205
-    e23: 0.2914668
+    e12: -0.000018525654
+    e13: 12.305881
+    e20: 0.93969315
+    e21: -0.0000063361213
+    e22: 0.34201872
+    e23: -65.988525
     e30: 0
     e31: 0
     e32: 0
@@ -5237,18 +5181,18 @@ MonoBehaviour:
   m_noiseTwist: 0
   m_noiseTwistOffset: 0
   m_basis:
-    e00: -0.27970684
-    e01: 0.19683023
-    e02: -0.93969256
-    e03: 0.10721569
-    e10: 0.5754928
-    e11: 0.81780684
-    e12: -0.00000014901161
-    e13: 0.0947592
-    e20: 0.76848704
-    e21: -0.54078627
-    e22: -0.3420205
-    e23: 0.2747254
+    e00: -0.27974355
+    e01: 0.196869
+    e02: -0.9396734
+    e03: -60.332775
+    e10: 0.5754914
+    e11: 0.8178078
+    e12: 0.000011652708
+    e13: 12.340639
+    e20: 0.7684746
+    e21: -0.54077077
+    e22: -0.34207296
+    e23: -66.00528
     e30: 0
     e31: 0
     e32: 0

@@ -17,7 +17,7 @@ MonoBehaviour:
     Guid:
       Value: 354731927238327760
   KinematicSpeed:
-    RawValue: 327680
+    RawValue: 196608
   JumpMultiplier:
     RawValue: 327680
   Gravity:

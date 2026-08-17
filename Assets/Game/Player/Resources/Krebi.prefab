@@ -322,7 +322,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Quantum.Unity::Quantum.QPrototypeBodyAnchor
   Prototype:
-    _empty_prototype_dummy_field_: 0
+    PreviousBaseYaw:
+      RawValue: 0
+    ContinuousBaseYaw:
+      RawValue: 0
+    Initialized:
+      Value: 0
 --- !u!1 &2550915087383933436
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,7 +402,7 @@ GameObject:
   - component: {fileID: 7302037069975265462}
   - component: {fileID: 5274490235534544333}
   - component: {fileID: 2967459280114582653}
-  - component: {fileID: 7728202957928516836}
+  - component: {fileID: 2687689337370224649}
   - component: {fileID: 2718709800201869971}
   m_Layer: 0
   m_Name: L Claw Joint
@@ -415,7 +420,7 @@ Transform:
   m_GameObject: {fileID: 7024080697622677001}
   serializedVersion: 2
   m_LocalRotation: {x: 0.6963643, y: 0.12278779, z: -0.12278779, w: 0.6963643}
-  m_LocalPosition: {x: -0.121643566, y: 0.060000002, z: 0.23508525}
+  m_LocalPosition: {x: -0.121643566, y: 0.15, z: 0.23508525}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -694,7 +699,7 @@ MonoBehaviour:
   View:
     Id:
       Value: 0
---- !u!114 &7728202957928516836
+--- !u!114 &2687689337370224649
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -707,27 +712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Quantum.Unity::Quantum.QPrototypeCrabClaw
   Prototype:
-    RestLocalPosition:
-      X:
-        RawValue: -7972
-      Y:
-        RawValue: 3932
-      Z:
-        RawValue: 15406
-    RestTwistAxis:
-      X:
-        RawValue: 0
-      Y:
-        RawValue: 0
-      Z:
-        RawValue: 0
-    RestSwingAxis:
-      X:
-        RawValue: 0
-      Y:
-        RawValue: 0
-      Z:
-        RawValue: 0
+    _empty_prototype_dummy_field_: 0
 --- !u!114 &2718709800201869971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -750,7 +735,7 @@ MonoBehaviour:
         X:
           RawValue: -7972
         Y:
-          RawValue: 3932
+          RawValue: 9830
         Z:
           RawValue: 15406
       Anchor:
@@ -860,7 +845,7 @@ GameObject:
   - component: {fileID: 558557627552704712}
   - component: {fileID: 1370172277968709394}
   - component: {fileID: 6990923017807614193}
-  - component: {fileID: 8478962190652685216}
+  - component: {fileID: 6344279943169169631}
   - component: {fileID: 1867296595937210952}
   m_Layer: 0
   m_Name: R Claw Joint
@@ -878,7 +863,7 @@ Transform:
   m_GameObject: {fileID: 8143167701896130018}
   serializedVersion: 2
   m_LocalRotation: {x: 0.6963642, y: -0.12278795, z: 0.12278795, w: 0.6963642}
-  m_LocalPosition: {x: 0.12164354, y: 0.060000002, z: 0.23508523}
+  m_LocalPosition: {x: 0.12164354, y: 0.15, z: 0.23508523}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1157,7 +1142,7 @@ MonoBehaviour:
   View:
     Id:
       Value: 0
---- !u!114 &8478962190652685216
+--- !u!114 &6344279943169169631
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1170,27 +1155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Quantum.Unity::Quantum.QPrototypeCrabClaw
   Prototype:
-    RestLocalPosition:
-      X:
-        RawValue: 7972
-      Y:
-        RawValue: 3932
-      Z:
-        RawValue: 15407
-    RestTwistAxis:
-      X:
-        RawValue: 0
-      Y:
-        RawValue: 0
-      Z:
-        RawValue: 0
-    RestSwingAxis:
-      X:
-        RawValue: 0
-      Y:
-        RawValue: 0
-      Z:
-        RawValue: 0
+    _empty_prototype_dummy_field_: 0
 --- !u!114 &1867296595937210952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1213,7 +1178,7 @@ MonoBehaviour:
         X:
           RawValue: 7972
         Y:
-          RawValue: 3932
+          RawValue: 9830
         Z:
           RawValue: 15407
       Anchor:
@@ -1588,14 +1553,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Quantum.Unity::Quantum.QPrototypeCrabOrientation
   Prototype:
-    WorldYaw:
-      RawValue: 0
-    LocalYaw:
-      RawValue: 0
     OrientationAngle:
       RawValue: 5570560
-    RotationSpeed:
-      RawValue: 35389440
+    NormalRotationSmooth:
+      RawValue: 262144
+    SprintRotationSmooth:
+      RawValue: 524288
+    LocalYaw:
+      RawValue: 0
 --- !u!114 &6319469408482069713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1603,12 +1568,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1857731284092253064}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d57890fd163731428a509cc8cc58b86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Player::CrabClawsAnimationView
   usePredictedFrame: 1
+  leftClaw: {fileID: 7302037069975265462}
+  rightClaw: {fileID: 558557627552704712}
   leftClawTarget: {fileID: 754961521216206618}
   rightClawTarget: {fileID: 5277794355287942698}
   bodyTuckPosition: 0.02
@@ -1619,12 +1586,6 @@ MonoBehaviour:
   idlePositionAmount: {x: 0.005, y: 0.003, z: 0.001}
   idleRotationAmount: {x: 2, y: 2, z: 3}
   oppositePhase: 0.5
-  maxJumpPositionOffset: 0.3
-  maxJumpRotation: 60
-  jumpSpreadPosition: 0.1
-  jumpVariation: 0.1
-  jumpSmooth: 8
-  landingSmooth: 25
 --- !u!4 &4065188574126495999 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2784763235198929911, guid: 9633c0dc6f5fc1f47aab20da16b597e4, type: 3}
@@ -1653,13 +1614,109 @@ PrefabInstance:
       propertyPath: m_Name
       value: Krebi
       objectReference: {fileID: 0}
+    - target: {fileID: 1439369693924285597, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e00
+      value: 0.27970606
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439369693924285597, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e01
+      value: -0.19683035
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439369693924285597, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e02
+      value: -0.93969274
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439369693924285597, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e03
+      value: -0.10721572
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439369693924285597, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e10
+      value: 0.5754927
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439369693924285597, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e11
+      value: 0.81780696
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439369693924285597, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e12
+      value: -0.00000047683716
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439369693924285597, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e13
+      value: 0.0947592
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439369693924285597, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e20
+      value: 0.76848733
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439369693924285597, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e21
+      value: -0.54078615
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439369693924285597, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e22
+      value: 0.34201998
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439369693924285597, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e23
+      value: 0.2747254
+      objectReference: {fileID: 0}
     - target: {fileID: 1744640763137718166, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
       propertyPath: baseTransform
       value: 
       objectReference: {fileID: 4065188574126495999}
     - target: {fileID: 1744640763137718166, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: finalScaleReference
+      value: 0.105000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 1744640763137718166, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
       propertyPath: _Editor_OnValidateTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972715734046694273, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e00
+      value: 0.3420201
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972715734046694273, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e01
+      value: 0.00000004785481
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972715734046694273, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e02
+      value: 0.9396927
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972715734046694273, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e03
+      value: -0.10112235
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972715734046694273, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e10
+      value: 1.7763568e-15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972715734046694273, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e12
+      value: 0.000000050926033
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972715734046694273, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e13
+      value: 0.060000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972715734046694273, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e20
+      value: 0.9396927
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972715734046694273, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e21
+      value: -0.000000017417728
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972715734046694273, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e22
+      value: -0.34202015
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972715734046694273, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e23
+      value: 0.2914668
       objectReference: {fileID: 0}
     - target: {fileID: 4056961561816765349, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1701,14 +1758,98 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4656815444856650019, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
-      propertyPath: m_Sources.Array.data[0].sourceTransform
-      value: 
-      objectReference: {fileID: 7302037069975265462}
-    - target: {fileID: 5061032188846002003, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
-      propertyPath: m_Sources.Array.data[0].sourceTransform
-      value: 
-      objectReference: {fileID: 558557627552704712}
+    - target: {fileID: 8481502199041853786, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e00
+      value: -0.34202063
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481502199041853786, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e01
+      value: -0.00000021691744
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481502199041853786, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e02
+      value: 0.9396925
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481502199041853786, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e03
+      value: 0.10112232
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481502199041853786, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e10
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481502199041853786, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e12
+      value: -0.00000023083876
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481502199041853786, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e13
+      value: 0.060000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481502199041853786, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e20
+      value: 0.9396925
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481502199041853786, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e21
+      value: -0.000000078951594
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481502199041853786, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e22
+      value: 0.3420205
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481502199041853786, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e23
+      value: 0.2914668
+      objectReference: {fileID: 0}
+    - target: {fileID: 8882919190571162037, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e00
+      value: -0.27970684
+      objectReference: {fileID: 0}
+    - target: {fileID: 8882919190571162037, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e01
+      value: 0.19683023
+      objectReference: {fileID: 0}
+    - target: {fileID: 8882919190571162037, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e02
+      value: -0.93969256
+      objectReference: {fileID: 0}
+    - target: {fileID: 8882919190571162037, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e03
+      value: 0.10721569
+      objectReference: {fileID: 0}
+    - target: {fileID: 8882919190571162037, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e10
+      value: 0.5754928
+      objectReference: {fileID: 0}
+    - target: {fileID: 8882919190571162037, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e11
+      value: 0.81780684
+      objectReference: {fileID: 0}
+    - target: {fileID: 8882919190571162037, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e12
+      value: -0.00000014901161
+      objectReference: {fileID: 0}
+    - target: {fileID: 8882919190571162037, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e13
+      value: 0.0947592
+      objectReference: {fileID: 0}
+    - target: {fileID: 8882919190571162037, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e20
+      value: 0.76848704
+      objectReference: {fileID: 0}
+    - target: {fileID: 8882919190571162037, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e21
+      value: -0.54078627
+      objectReference: {fileID: 0}
+    - target: {fileID: 8882919190571162037, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e22
+      value: -0.3420205
+      objectReference: {fileID: 0}
+    - target: {fileID: 8882919190571162037, guid: 3865867d135cf024386f17cc4e6361b4, type: 3}
+      propertyPath: m_basis.e23
+      value: 0.2747254
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

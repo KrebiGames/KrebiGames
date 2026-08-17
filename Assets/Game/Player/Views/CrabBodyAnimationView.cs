@@ -6,36 +6,36 @@ using FIMSpace.FProceduralAnimation;
 public class CrabBodyAnimationView : QuantumEntityViewComponent {
 
 	[Header("View")]
-	[SerializeField] private bool usePredictedFrame = true;
-	[SerializeField] private Transform root;
-	[SerializeField] private Transform shell;
+	[SerializeField] bool usePredictedFrame = true;
+	[SerializeField] Transform root;
+	[SerializeField] Transform shell;
 	[SerializeField] GameObject[] claws;
 
 	[Header("Step Size")]
-	[SerializeField] private float minGlueRange = 0.15f;
-	[SerializeField] private float maxGlueRange = 0.5f;
+	[SerializeField] float minGlueRange = 0.15f;
+	[SerializeField] float maxGlueRange = 0.5f;
 
 	[Header("Movement")]
-	[SerializeField] private float moveThreshold = 0.05f;
-	[SerializeField] private float velocitySmooth = 20f;
+	[SerializeField] float moveThreshold = 0.05f;
+	[SerializeField] float velocitySmooth = 20f;
 
 	[Header("Body Height")]
-	[SerializeField] private float minBodyHeight = -0.03f;
-	[SerializeField] private float maxBodyHeight = 0.1f;
-	[SerializeField] private float bodyHeightSmooth = 50f;
+	[SerializeField] float minBodyHeight = -0.03f;
+	[SerializeField] float maxBodyHeight = 0.1f;
+	[SerializeField] float bodyHeightSmooth = 50f;
 
 	[Header("Body Pitch")]
-	[SerializeField] private float minBodyPitch = -30f;
-	[SerializeField] private float maxBodyPitch = -60f;
-	[SerializeField] private float bodyPitchSmooth = 20f;
+	[SerializeField] float minBodyPitch = -30f;
+	[SerializeField] float maxBodyPitch = -60f;
+	[SerializeField] float bodyPitchSmooth = 20f;
 
 	[Header("Landing Wobble")]
-	[SerializeField] private float landingHeightWobble = 0.06f;
-	[SerializeField] private float landingPitchWobble = 4f;
-	[SerializeField] private float landingWobbleFrequency = 3.5f;
-	[SerializeField] private float landingWobbleDamping = 6f;
-	[SerializeField] private float landingMinImpactSpeed = 1f;
-	[SerializeField] private float landingMaxImpactSpeed = 5f;
+	[SerializeField] float landingHeightWobble = 0.06f;
+	[SerializeField] float landingPitchWobble = 4f;
+	[SerializeField] float landingWobbleFrequency = 3.5f;
+	[SerializeField] float landingWobbleDamping = 6f;
+	[SerializeField] float landingMinImpactSpeed = 1f;
+	[SerializeField] float landingMaxImpactSpeed = 5f;
 
 	float maxSpeed;
 	float currentBodyPitch;
