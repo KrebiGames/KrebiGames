@@ -420,7 +420,7 @@ Transform:
   m_GameObject: {fileID: 7024080697622677001}
   serializedVersion: 2
   m_LocalRotation: {x: 0.6963643, y: 0.12278779, z: -0.12278779, w: 0.6963643}
-  m_LocalPosition: {x: -0.121643566, y: 0.15, z: 0.23508525}
+  m_LocalPosition: {x: -0.08, y: 0.15, z: 0.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -520,7 +520,7 @@ MonoBehaviour:
       CompoundShapes: []
       IsScaledBySourceCollider: 0
     Shape3D:
-      ShapeType: 1
+      ShapeType: 2
       SphereRadius:
         RawValue: 5243
       CapsuleRadius:
@@ -537,11 +537,11 @@ MonoBehaviour:
           RawValue: -655
       BoxExtents:
         X:
-          RawValue: 32768
+          RawValue: 2294
         Y:
-          RawValue: 32768
+          RawValue: 4588
         Z:
-          RawValue: 32768
+          RawValue: 4260
       RotationOffset:
         X:
           RawValue: 0
@@ -733,11 +733,11 @@ MonoBehaviour:
       ConnectedEntity: {fileID: 5871205952487210426}
       ConnectedAnchor:
         X:
-          RawValue: -7972
+          RawValue: -5243
         Y:
           RawValue: 9830
         Z:
-          RawValue: 15406
+          RawValue: 13107
       Anchor:
         X:
           RawValue: 0
@@ -863,7 +863,7 @@ Transform:
   m_GameObject: {fileID: 8143167701896130018}
   serializedVersion: 2
   m_LocalRotation: {x: 0.6963642, y: -0.12278795, z: 0.12278795, w: 0.6963642}
-  m_LocalPosition: {x: 0.12164354, y: 0.15, z: 0.23508523}
+  m_LocalPosition: {x: 0.08, y: 0.15, z: 0.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -963,7 +963,7 @@ MonoBehaviour:
       CompoundShapes: []
       IsScaledBySourceCollider: 0
     Shape3D:
-      ShapeType: 1
+      ShapeType: 2
       SphereRadius:
         RawValue: 5243
       CapsuleRadius:
@@ -980,11 +980,11 @@ MonoBehaviour:
           RawValue: -655
       BoxExtents:
         X:
-          RawValue: 32768
+          RawValue: 2294
         Y:
-          RawValue: 32768
+          RawValue: 4588
         Z:
-          RawValue: 32768
+          RawValue: 4260
       RotationOffset:
         X:
           RawValue: 0
@@ -1176,11 +1176,11 @@ MonoBehaviour:
       ConnectedEntity: {fileID: 5871205952487210426}
       ConnectedAnchor:
         X:
-          RawValue: 7972
+          RawValue: 5243
         Y:
           RawValue: 9830
         Z:
-          RawValue: 15407
+          RawValue: 13107
       Anchor:
         X:
           RawValue: 0
