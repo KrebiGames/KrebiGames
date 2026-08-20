@@ -3,7 +3,7 @@ using Quantum;
 using Photon.Deterministic;
 using FIMSpace.FProceduralAnimation;
 
-public class CrabBodyAnimationView : QuantumEntityViewComponent {
+public class BodyAnimation : QuantumEntityViewComponent {
 
 	[Header("View")]
 	[SerializeField] bool usePredictedFrame = true;
@@ -107,7 +107,7 @@ public class CrabBodyAnimationView : QuantumEntityViewComponent {
 
 		UpdateMovement(isMoving, isGrounded);
 		UpdateBodyHeight(speed01);
-		UpdateBodyRotation(speed01, frame.Get<CrabOrientation>(EntityRef).LocalYaw.AsFloat, isGrounded);
+		UpdateBodyRotation(speed01, frame.Get<BodyOrientation>(EntityRef).LocalYaw.AsFloat, isGrounded);
 
 		wasGrounded = isGrounded;
 	}

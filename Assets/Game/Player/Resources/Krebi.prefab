@@ -403,7 +403,6 @@ GameObject:
   - component: {fileID: 5274490235534544333}
   - component: {fileID: 2967459280114582653}
   - component: {fileID: 2687689337370224649}
-  - component: {fileID: 2718709800201869971}
   m_Layer: 0
   m_Name: L Claw Joint
   m_TagString: Untagged
@@ -420,12 +419,12 @@ Transform:
   m_GameObject: {fileID: 7024080697622677001}
   serializedVersion: 2
   m_LocalRotation: {x: 0.6963643, y: 0.12278779, z: -0.12278779, w: 0.6963643}
-  m_LocalPosition: {x: -0.08, y: 0.15, z: 0.2}
+  m_LocalPosition: {x: -0.1216435, y: 0.06, z: 0.2350852}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 6914693676687487582}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -20}
 --- !u!114 &5274490235534544333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -485,7 +484,7 @@ MonoBehaviour:
     IsTrigger: 0
     Material:
       Id:
-        Value: 0
+        Value: 352027636163139609
     SourceCollider: {fileID: 0}
     SourceColliders: []
     Shape2D:
@@ -520,9 +519,9 @@ MonoBehaviour:
       CompoundShapes: []
       IsScaledBySourceCollider: 0
     Shape3D:
-      ShapeType: 2
+      ShapeType: 1
       SphereRadius:
-        RawValue: 5243
+        RawValue: 4588
       CapsuleRadius:
         RawValue: 32768
       CapsuleHeight:
@@ -532,9 +531,9 @@ MonoBehaviour:
         X:
           RawValue: 0
         Y:
-          RawValue: 3277
+          RawValue: 0
         Z:
-          RawValue: -655
+          RawValue: 0
       BoxExtents:
         X:
           RawValue: 2294
@@ -560,15 +559,15 @@ MonoBehaviour:
   PhysicsBody:
     IsEnabled: 1
     Config2D: 116
-    Config3D: 58
+    Config3D: 59
     RotationFreeze: 0
     InertiaMode: 0
     Mass:
-      RawValue: 65536
+      RawValue: 32768
     Drag:
-      RawValue: 32768
+      RawValue: 131072
     AngularDrag:
-      RawValue: 32768
+      RawValue: 327680
     ExplicitInertia2D:
       RawValue: 65536
     ExplicitInertia3D:
@@ -656,9 +655,9 @@ MonoBehaviour:
       CompoundShapes: []
       IsScaledBySourceCollider: 0
     InertiaScale:
-      _hasValue: 0
+      _hasValue: 1
       _value:
-        RawValue: 65536
+        RawValue: 131072
     GravityScale:
       _hasValue: 1
       _value:
@@ -708,100 +707,60 @@ MonoBehaviour:
   m_GameObject: {fileID: 7024080697622677001}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b9555446e7e15d44acafdd40a8559bc, type: 3}
+  m_Script: {fileID: 11500000, guid: dae656d39f8abd247ad475bfa7c75e5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Quantum.Unity::Quantum.QPrototypeCrabClaw
   Prototype:
-    _empty_prototype_dummy_field_: 0
---- !u!114 &2718709800201869971
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7024080697622677001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a4f21123fba28543a8e8102a798713e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Quantum.Unity::Quantum.QPrototypePhysicsJoints3D
-  Prototype:
-    JointConfigs:
-    - StartDisabled: 0
-      JointType: 4
-      UserTag: 0
-      ConnectedEntity: {fileID: 5871205952487210426}
-      ConnectedAnchor:
-        X:
-          RawValue: -5243
-        Y:
-          RawValue: 9830
-        Z:
-          RawValue: 13107
-      Anchor:
-        X:
-          RawValue: 0
-        Y:
-          RawValue: 0
-        Z:
-          RawValue: 0
-      Axis:
-        X:
-          RawValue: 0
-        Y:
-          RawValue: 0
-        Z:
-          RawValue: 0
-      TwistAxis:
-        X:
-          RawValue: 65536
-        Y:
-          RawValue: 0
-        Z:
-          RawValue: 0
-      SwingAxis:
-        X:
-          RawValue: 0
-        Y:
-          RawValue: 65536
-        Z:
-          RawValue: 0
-      Frequency:
+    Side:
+      Value: 0
+    State:
+      Value: 0
+    ShoulderLocalPosition:
+      X:
+        RawValue: -2621
+      Y:
+        RawValue: 3932
+      Z:
+        RawValue: 3932
+    MaxReach:
+      RawValue: 26214
+    IdleLocalPosition:
+      X:
+        RawValue: -7864
+      Y:
+        RawValue: 3932
+      Z:
+        RawValue: 14418
+    ReachLocalPosition:
+      X:
+        RawValue: -4915
+      Y:
+        RawValue: 3932
+      Z:
+        RawValue: 20972
+    PositionSmooth:
+      RawValue: 786432
+    AttackSmooth:
+      RawValue: 1966080
+    KickDuration:
+      RawValue: 9830
+    KickTime:
+      RawValue: 0
+    GrabThreshold:
+      RawValue: 55706
+    GrabDelay:
+      RawValue: 0
+    GrabTime:
+      RawValue: 0
+    CurrentLocalPosition:
+      X:
         RawValue: 0
-      DampingRatio:
+      Y:
         RawValue: 0
-      AutoConfigureDistance: 0
-      Distance:
+      Z:
         RawValue: 0
-      MinDistance:
-        RawValue: 0
-      MaxDistance:
-        RawValue: 0
-      UseAngleLimits: 0
-      LowerAngle:
-        RawValue: 0
-      UpperAngle:
-        RawValue: 0
-      UseTwistAngleLimits: 1
-      TwistLowerAngle:
-        RawValue: -1966080
-      TwistUpperAngle:
-        RawValue: 1966080
-      Swing1AngleLimits:
-        _hasValue: 1
-        _value:
-          RawValue: -2949120
-      Swing2AngleLimits:
-        _hasValue: 1
-        _value:
-          RawValue: -2949120
-      UseMotor: 0
-      MotorSpeed:
-        RawValue: 0
-      MaxMotorTorque:
-        _hasValue: 0
-        _value:
-          RawValue: 0
+    Initialized:
+      Value: 0
 --- !u!1 &7213686797112809561
 GameObject:
   m_ObjectHideFlags: 0
@@ -846,7 +805,6 @@ GameObject:
   - component: {fileID: 1370172277968709394}
   - component: {fileID: 6990923017807614193}
   - component: {fileID: 6344279943169169631}
-  - component: {fileID: 1867296595937210952}
   m_Layer: 0
   m_Name: R Claw Joint
   m_TagString: Untagged
@@ -863,7 +821,7 @@ Transform:
   m_GameObject: {fileID: 8143167701896130018}
   serializedVersion: 2
   m_LocalRotation: {x: 0.6963642, y: -0.12278795, z: 0.12278795, w: 0.6963642}
-  m_LocalPosition: {x: 0.08, y: 0.15, z: 0.2}
+  m_LocalPosition: {x: 0.1216435, y: 0.06, z: 0.2350852}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -928,7 +886,7 @@ MonoBehaviour:
     IsTrigger: 0
     Material:
       Id:
-        Value: 0
+        Value: 352027636163139609
     SourceCollider: {fileID: 0}
     SourceColliders: []
     Shape2D:
@@ -963,9 +921,9 @@ MonoBehaviour:
       CompoundShapes: []
       IsScaledBySourceCollider: 0
     Shape3D:
-      ShapeType: 2
+      ShapeType: 1
       SphereRadius:
-        RawValue: 5243
+        RawValue: 4588
       CapsuleRadius:
         RawValue: 32768
       CapsuleHeight:
@@ -975,9 +933,9 @@ MonoBehaviour:
         X:
           RawValue: 0
         Y:
-          RawValue: 3277
+          RawValue: 0
         Z:
-          RawValue: -655
+          RawValue: 0
       BoxExtents:
         X:
           RawValue: 2294
@@ -1003,15 +961,15 @@ MonoBehaviour:
   PhysicsBody:
     IsEnabled: 1
     Config2D: 116
-    Config3D: 58
+    Config3D: 59
     RotationFreeze: 0
     InertiaMode: 0
     Mass:
-      RawValue: 65536
+      RawValue: 32768
     Drag:
-      RawValue: 32768
+      RawValue: 131072
     AngularDrag:
-      RawValue: 32768
+      RawValue: 327680
     ExplicitInertia2D:
       RawValue: 65536
     ExplicitInertia3D:
@@ -1099,9 +1057,9 @@ MonoBehaviour:
       CompoundShapes: []
       IsScaledBySourceCollider: 0
     InertiaScale:
-      _hasValue: 0
+      _hasValue: 1
       _value:
-        RawValue: 65536
+        RawValue: 131072
     GravityScale:
       _hasValue: 1
       _value:
@@ -1151,100 +1109,60 @@ MonoBehaviour:
   m_GameObject: {fileID: 8143167701896130018}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b9555446e7e15d44acafdd40a8559bc, type: 3}
+  m_Script: {fileID: 11500000, guid: dae656d39f8abd247ad475bfa7c75e5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Quantum.Unity::Quantum.QPrototypeCrabClaw
   Prototype:
-    _empty_prototype_dummy_field_: 0
---- !u!114 &1867296595937210952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8143167701896130018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a4f21123fba28543a8e8102a798713e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Quantum.Unity::Quantum.QPrototypePhysicsJoints3D
-  Prototype:
-    JointConfigs:
-    - StartDisabled: 0
-      JointType: 4
-      UserTag: 0
-      ConnectedEntity: {fileID: 5871205952487210426}
-      ConnectedAnchor:
-        X:
-          RawValue: 5243
-        Y:
-          RawValue: 9830
-        Z:
-          RawValue: 13107
-      Anchor:
-        X:
-          RawValue: 0
-        Y:
-          RawValue: 0
-        Z:
-          RawValue: 0
-      Axis:
-        X:
-          RawValue: 0
-        Y:
-          RawValue: 0
-        Z:
-          RawValue: 0
-      TwistAxis:
-        X:
-          RawValue: 65536
-        Y:
-          RawValue: 0
-        Z:
-          RawValue: 0
-      SwingAxis:
-        X:
-          RawValue: 0
-        Y:
-          RawValue: 65536
-        Z:
-          RawValue: 0
-      Frequency:
+    Side:
+      Value: 1
+    State:
+      Value: 0
+    ShoulderLocalPosition:
+      X:
+        RawValue: 2621
+      Y:
+        RawValue: 3932
+      Z:
+        RawValue: 3932
+    MaxReach:
+      RawValue: 26214
+    IdleLocalPosition:
+      X:
+        RawValue: 7864
+      Y:
+        RawValue: 3932
+      Z:
+        RawValue: 14418
+    ReachLocalPosition:
+      X:
+        RawValue: 4915
+      Y:
+        RawValue: 3932
+      Z:
+        RawValue: 20972
+    PositionSmooth:
+      RawValue: 786432
+    AttackSmooth:
+      RawValue: 1966080
+    KickDuration:
+      RawValue: 9830
+    KickTime:
+      RawValue: 0
+    GrabThreshold:
+      RawValue: 55706
+    GrabDelay:
+      RawValue: 0
+    GrabTime:
+      RawValue: 0
+    CurrentLocalPosition:
+      X:
         RawValue: 0
-      DampingRatio:
+      Y:
         RawValue: 0
-      AutoConfigureDistance: 0
-      Distance:
+      Z:
         RawValue: 0
-      MinDistance:
-        RawValue: 0
-      MaxDistance:
-        RawValue: 0
-      UseAngleLimits: 0
-      LowerAngle:
-        RawValue: 0
-      UpperAngle:
-        RawValue: 0
-      UseTwistAngleLimits: 1
-      TwistLowerAngle:
-        RawValue: -1966080
-      TwistUpperAngle:
-        RawValue: 1966080
-      Swing1AngleLimits:
-        _hasValue: 1
-        _value:
-          RawValue: -2949120
-      Swing2AngleLimits:
-        _hasValue: 1
-        _value:
-          RawValue: -2949120
-      UseMotor: 0
-      MotorSpeed:
-        RawValue: 0
-      MaxMotorTorque:
-        _hasValue: 0
-        _value:
-          RawValue: 0
+    Initialized:
+      Value: 0
 --- !u!1001 &2219997608893534984
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1549,7 +1467,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1857731284092253064}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45cd34bdf89fccb4692b2e25b98c5c41, type: 3}
+  m_Script: {fileID: 11500000, guid: dbd02c7643112e948a5077244968f293, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Quantum.Unity::Quantum.QPrototypeCrabOrientation
   Prototype:
@@ -1574,18 +1492,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Player::CrabClawsAnimationView
   usePredictedFrame: 1
-  leftClaw: {fileID: 7302037069975265462}
-  rightClaw: {fileID: 558557627552704712}
-  leftClawTarget: {fileID: 754961521216206618}
-  rightClawTarget: {fileID: 5277794355287942698}
-  bodyTuckPosition: 0.02
-  bodyTuckRotation: 1
-  moveThreshold: 1
-  idleSpeed: 0.5
-  idleSmooth: 5
-  idlePositionAmount: {x: 0.005, y: 0.003, z: 0.001}
-  idleRotationAmount: {x: 2, y: 2, z: 3}
-  oppositePhase: 0.5
+  claws:
+  - {fileID: 7302037069975265462}
+  - {fileID: 558557627552704712}
+  targets:
+  - {fileID: 754961521216206618}
+  - {fileID: 5277794355287942698}
 --- !u!4 &4065188574126495999 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2784763235198929911, guid: 9633c0dc6f5fc1f47aab20da16b597e4, type: 3}
