@@ -9,12 +9,12 @@ public class InputPoll : MonoBehaviour {
 	[SerializeField] private InputActionReference lookAction;
 	[SerializeField] private InputActionReference jumpAction;
 	[SerializeField] private InputActionReference sprintAction;
-	[SerializeField] private InputActionReference leftClawReachAction;
-	[SerializeField] private InputActionReference rightClawReachAction;
 	[SerializeField] private InputActionReference leftClawKickAction;
 	[SerializeField] private InputActionReference rightClawKickAction;
-	[SerializeField] private InputActionReference leftClawCutAction;
-	[SerializeField] private InputActionReference rightClawCutAction;
+	[SerializeField] private InputActionReference leftClawReachAction;
+	[SerializeField] private InputActionReference rightClawReachAction;
+	[SerializeField] private InputActionReference leftClawPinchAction;
+	[SerializeField] private InputActionReference rightClawPinchAction;
 
 	private readonly Dictionary<PlayerInput, CachedActions> actionCache = new();
 
@@ -23,12 +23,12 @@ public class InputPoll : MonoBehaviour {
 		public InputAction Look;
 		public InputAction Jump;
 		public InputAction Sprint;
-		public InputAction LeftClawReach;
-		public InputAction RightClawReach;
 		public InputAction LeftClawKick;
 		public InputAction RightClawKick;
-		public InputAction LeftClawCut;
-		public InputAction RightClawCut;
+		public InputAction LeftClawReach;
+		public InputAction RightClawReach;
+		public InputAction LeftClawPinch;
+		public InputAction RightClawPinch;
 	}
 
 	private void Start() {
@@ -58,8 +58,8 @@ public class InputPoll : MonoBehaviour {
 					RightClawReach = playerInput.actions.FindAction(rightClawReachAction.action.id),
 					LeftClawKick = playerInput.actions.FindAction(leftClawKickAction.action.id),
 					RightClawKick = playerInput.actions.FindAction(rightClawKickAction.action.id),
-					LeftClawCut = playerInput.actions.FindAction(leftClawCutAction.action.id),
-					RightClawCut = playerInput.actions.FindAction(rightClawCutAction.action.id)
+					LeftClawPinch = playerInput.actions.FindAction(leftClawPinchAction.action.id),
+					RightClawPinch = playerInput.actions.FindAction(rightClawPinchAction.action.id)
 				};
 
 				actionCache.Add(playerInput, actions);
@@ -76,8 +76,8 @@ public class InputPoll : MonoBehaviour {
 			input.RightClawReach = FP.FromFloat_UNSAFE(actions.RightClawReach.ReadValue<float>());
 			input.LeftClawKick = actions.LeftClawKick.IsPressed();
 			input.RightClawKick = actions.RightClawKick.IsPressed();
-			input.LeftClawCut = actions.LeftClawCut.IsPressed();
-			input.RightClawCut = actions.RightClawCut.IsPressed();
+			input.LeftClawPinch = actions.LeftClawPinch.IsPressed();
+			input.RightClawPinch = actions.RightClawPinch.IsPressed();
 		}
 
 		callback.SetInput(input, DeterministicInputFlags.Repeatable);
