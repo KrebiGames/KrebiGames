@@ -27,12 +27,12 @@ MonoBehaviour:
   MaxPenetrationSteps: 3
   CCDRadiusMultiplier:
     RawValue: 65536
+  SleepDelay:
+    RawValue: 0
   Processors:
   - Id:
       Value: 298091185791803423
   - Id:
       Value: 354731927238327760
-  - Id:
-      Value: 486799045937222986
   - Id:
       Value: 536337578711360915
