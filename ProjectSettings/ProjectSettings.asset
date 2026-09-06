@@ -84,7 +84,7 @@ PlayerSettings:
   androidApplicationEntry: 2
   defaultIsNativeResolution: 1
   macRetinaSupport: 1
-  runInBackground: 0
+  runInBackground: 1
   muteOtherAudioSources: 0
   Prepare IOS For Recording: 0
   Force IOS Speakers When Recording: 0
@@ -566,7 +566,10 @@ PlayerSettings:
       m_Height: 720
       m_Kind: 1
       m_SubKind: 
-  m_BuildTargetBatching: []
+  m_BuildTargetBatching:
+  - m_BuildTarget: Standalone
+    m_StaticBatching: 1
+    m_DynamicBatching: 0
   m_BuildTargetShaderSettings: []
   m_BuildTargetGraphicsJobs: []
   m_BuildTargetGraphicsJobMode: []
@@ -879,7 +882,7 @@ PlayerSettings:
     PS4: QUANTUM_LOGLEVEL_INFO
     PS5: QUANTUM_LOGLEVEL_INFO
     QNX: QUANTUM_LOGLEVEL_INFO
-    Standalone: MUDBUN_URP;MUDBUN_BURST;MUDBUN;ODIN_INSPECTOR;ODIN_INSPECTOR_3;ODIN_INSPECTOR_3_1;ODIN_INSPECTOR_3_2;ODIN_INSPECTOR_3_3;QUANTUM_LOGLEVEL_INFO;CREST_OCEAN;QUANTUM_DISABLE_HUB_POPUP
+    Standalone: MUDBUN_URP;MUDBUN_BURST;MUDBUN;ODIN_INSPECTOR;ODIN_INSPECTOR_3;ODIN_INSPECTOR_3_1;ODIN_INSPECTOR_3_2;ODIN_INSPECTOR_3_3;QUANTUM_LOGLEVEL_INFO;CREST_OCEAN;QUANTUM_DISABLE_HUB_POPUP;PHOTON_REALTIME_5_OR_NEWER
     VisionOS: QUANTUM_LOGLEVEL_INFO
     WebGL: QUANTUM_LOGLEVEL_INFO
     Windows Store Apps: QUANTUM_LOGLEVEL_INFO
