@@ -246,24 +246,6 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
-    "ecs-core": {
-      "version": "file:ecs-core",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
-    "ecs-input": {
-      "version": "file:ecs-input",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
-    "friflo.friflo-ecs-unity": {
-      "version": "file:friflo.friflo-ecs-unity",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
     "odininspector": {
       "version": "file:A:/Packages/Odin",
       "depth": 0,

@@ -1,12 +1,3 @@
-[submodule "Packages/friflo.friflo-ecs-unity"]
-	path = Packages/friflo.friflo-ecs-unity
-	url = https://github.com/KrebiGames/friflo-ecs-unity.git
-[submodule "Packages/ecs-input"]
-	path = Packages/ecs-input
-	url = https://github.com/KrebiGames/ecs-input.git
-[submodule "Packages/ecs-core"]
-	path = Packages/ecs-core
-	url = https://github.com/KrebiGames/ecs-core.git
 [submodule "Packages/com.photonengine.photonlibs"]
 	path = Packages/com.photonengine.photonlibs
 	url = https://github.com/KrebiGames/photon-libs.git
