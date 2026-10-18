@@ -4,8 +4,6 @@ using UnityEngine.InputSystem;
 
 public class LocalPlayerAccess : MonoBehaviour {
 	[SerializeField] public PlayerInput PlayerInput;
-
-	[SerializeField] public Camera Camera;
 	[SerializeField] public CinemachineCamera CMCamera;
 
 	public bool IsMainLocalPlayer { get; set; }

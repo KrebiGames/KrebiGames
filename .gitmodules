@@ -31,3 +31,7 @@
 [submodule "Assets/TextMesh Pro"]
 	path = Assets/TextMesh Pro
 	url = https://github.com/KrebiGames/tmp-assets.git
+[submodule ".ai/ai-workflow"]
+	path = .ai/ai-workflow
+	url = https://github.com/KrebiGames/ai-workflow.git
+	branch = main
